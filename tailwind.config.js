@@ -19,10 +19,10 @@ module.exports = {
 
     extend: {
       colors: {
-        'c-green': '#58B662',
-        'c-blue': '#041938',
-        'c-orange': '#f97701',
-        'c-white': '#fafafa',
+        "c-green": "#58B662",
+        "c-blue": "#041938",
+        "c-orange": "#f97701",
+        "c-white": "#F0F0F0",
       },
       container: {
         padding: {
