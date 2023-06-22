@@ -18,7 +18,7 @@ const CONTACTS = [
   },
   {
     name: '@aju6891t',
-    url: '#',
+    url: 'https://liff.line.me/1645278921-kWRPP32q/?accountId=aju6891t',
     icon: <BsLine className="h-5 w-5" />,
   },
   {
