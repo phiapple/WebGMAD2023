@@ -305,7 +305,7 @@ export default function Home() {
 						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Media Partners</h3>
 						<div className="grid w-full grid-cols-2 place-content-center items-center md:grid-cols-12">
 							{pastMedpart.map((item, index) => (
-								<div className={`${item.span} relative mx-4 aspect-square`} key={index}>
+								<div className={`${item.span} relative mx-4 aspect-square xl:mx-8`} key={index}>
 									<Image
 										src={item.imgUrl}
 										alt={item.imgAlt}
