@@ -1,49 +1,81 @@
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
+import React from "react";
 import TImelineCardRight from "../../components/card/TimelineCard/TImelineRightCard";
 import TimelineCardLeft from "../../components/card/TimelineCard/TimelineLeftCard";
+import Footer from "../../components/footer";
+import Navbar from "../../components/navbar";
 
 const leftTimeline = [
   {
-    time: "16, 18, and 20 September 2023",
-    title: "Pre-Event",
+    time: "25 June - 21 July 2023",
+    title: "Open Submission Preliminary 1",
+    desc: "",
+  },
+  {
+    time: "9 September 2023",
+    title: "Semifinal Stage",
     desc: "",
   },
 ];
 const rightTimeline = [
   {
-    time: "23 September 2023",
-    title: "Main Event",
+    time: "6 - 20 August 2023",
+    title: "Open Submission Preliminary 2",
+    desc: "",
+  },
+  {
+    time: "22 September 2023",
+    title: "Grand Final Stage",
     desc: "",
   },
 ];
 
-export default function Atalk() {
+export default function Jncc() {
   return (
     <>
       <div className="h-full w-full">
         <Navbar fixedBg></Navbar>
         <div className="h-[82px]"></div>
-        <section className="relative h-screen w-full bg-gradient-to-b from-c-blue to-c-green ">
+        <section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">
           <div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
-            <div className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px]">
+            <div className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-jncc bg-cover p-[40px] drop-shadow-lg md:px-[120px]">
               <h3 className="text-center font-belleza text-2xl text-c-orange md:text-3xl">
-                A-Talk
+                JNCC
               </h3>
               <h2 className="text-center font-belleza text-4xl text-white lg:text-6xl">
-                Accounting Talk
+                Jogjakarta National Case Competition
               </h2>
               <div className="h-6"></div>
               <p className="text-center text-sm text-white md:text-lg">
-                A-Talk or Accounting Talk is a talk show consisting of two
-                sessions that discuss current issues by inviting competent
-                speakers as a platform for discussion, confirmation, and
-                resolution of those issues, guided by a moderator. This year,
-                A-Talk will feature speakers from the government and companies.
-                Each speaker will be present in every session of Accounting Talk
-                (A-Talk).
+                Jogjakarta National Case Competition (JNCC) is a prestigious
+                event organized by GMAD 2023 that welcomes participants of all
+                levels. It features a case competition divided into four stages:
+                Preliminary #1 (essay submission), Preliminary #2 (proposal
+                making), Debate Round, and Grand Final for qualified
+                participants. JNCC's main goal is to foster critical thinking
+                among students nationwide and address contemporary business
+                challenges. Participants can expect an unforgettable experience,
+                receiving valuable feedback and networking opportunities to
+                engage in meaningful discussions.
               </p>
             </div>
+          </div>
+          <div className=" mx-auto flex justify-center px-[40px]">
+            <div className="flex aspect-[16/9] h-full max-h-[305px] max-w-[1208px] flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:w-[800px] xl:w-[1208px]">
+              <h3 className="text-2xl text-c-blue md:text-3xl">Sub-Theme</h3>
+              <h2 className="mt-4 text-center text-2xl text-white md:text-4xl">
+                "Ethical Interest: Maintaining Business Ethics in Supply Chain
+                Sustainability Amidst Global Challenges"
+              </h2>
+            </div>
+          </div>
+          <div className="mx-auto my-10 max-w-[1088px] px-4">
+            <p className="text-center text-lg text-white md:text-xl">
+              JNCC aims to help businesses to address the sustainability
+              challenges of the future. This subtheme was chosen to emphasize
+              the importance of upholding ethical standards while ensuring
+              sustainable practices in supply chains, even in the face of global
+              challenges.
+            </p>
           </div>
         </section>
         <section className="block h-fit w-full bg-c-white">
@@ -72,7 +104,7 @@ export default function Atalk() {
                 ))}
               </div>
               <div className="mx-[15px] w-[30px] min-w-[30px] bg-gradient-to-b from-c-green to-c-blue md:mx-12 md:w-[60px]"></div>
-              <div className="xl:w-[370px]">
+              <div>
                 {/* right component */}
                 {rightTimeline.map((data, index) => (
                   <div>
@@ -102,7 +134,7 @@ export default function Atalk() {
           <div className="mt-[32px] md:mt-[60px]">
             <a
               className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
-              href=""
+              href="https://bit.ly/RegistrationJNCC2023"
             >
               Register Now
             </a>

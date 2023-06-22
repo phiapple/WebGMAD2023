@@ -3,14 +3,14 @@ import React from 'react'
 const TImelineCard = ({time, title, desc}) => {
   return (
     <>
-        <div className="flex-col">
-            <div className={"flex justify-center rounded-full bg-c-white border border-c-orange px-4 py-2"}>
-                <h3 className="text-2xl text-c-orange">
+        <div className="flex-col max-w-[158px] md:max-w-[666px]">
+            <div className={"flex justify-center rounded-full bg-c-white border border-c-orange md:px-4 px-2 md:py-2 py-0 text-center items-center"}>
+                <h3 className="md:text-2xl sm:text-xl text-lg text-c-orange">
                     {time}
                 </h3>
             </div>
             <div className="flex justify-start mt-4 mb-2">
-                <h3 className="text-2xl text-c-blue font-bold">
+                <h3 className="md:text-2xl text-xl text-c-blue font-bold ">
                     {title}
                 </h3>
             </div>
