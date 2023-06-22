@@ -8,34 +8,46 @@ const events = [
 		subtitle: 'National Accounting Olympiad',
 		buttonTo: '/events/nao',
 		regLink: 'https://bit.ly/RegistrationNAO2023',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'NAO Image',
 	},
 	{
 		title: 'Junior NAO',
 		subtitle: 'Junior National Accounting Olympiad',
 		buttonTo: '/events/junior-nao',
 		regLink: 'https://bit.ly/RegistrationNAOJunior2023',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'Junior NAO Image ',
 	},
 	{
 		title: 'JNCC',
 		subtitle: 'Jogjakarta National Case Competition',
 		buttonTo: '/events/jndcc',
 		regLink: 'https://bit.ly/RegistrationJNCC2023',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'JNCC Image ',
 	},
 	{
 		title: 'A-Talks',
 		subtitle: 'Accounting Talk',
 		buttonTo: '/events/atalks',
 		regLink: 'https://bit.ly/RegistrationA-Talk2023',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'A-Talks Image',
 	},
 	{
 		title: 'GRAND',
 		subtitle: 'GMAD Awarding and Networking Day',
 		buttonTo: '/events/grand',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'GRAND Image',
 	},
 	{
-		title: '',
+		title: 'Comvis',
 		subtitle: 'Company Visit',
 		buttonTo: '/events/company-visit',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'Company Visit Image ',
 	},
 ];
 
@@ -197,6 +209,15 @@ export default function Home() {
 								className="col-span-1 flex flex-col items-center justify-center gap-2 rounded-3xl bg-white p-3 text-center shadow-basic md:h-[450px] md:gap-6 md:p-6 md:px-8"
 								key={index}
 							>
+								<div className="w-full rounded-2xl bg-c-blue py-8">
+									<Image
+										src={event.imgUrl}
+										alt={event.imgAlt}
+										width={183}
+										height={135}
+										className="mx-auto"
+									></Image>
+								</div>
 								<p className="font-bold text-c-orange">{event.title}</p>
 								<p className="text-lg font-semibold text-c-blue md:text-2xl md:text-4xl">
 									{event.subtitle}
