@@ -7,10 +7,10 @@ export default function DropdownMenu({ name, routes }) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="flex items-center font-medium hover:bg-[#052b6362] transition-all duration-150 rounded-md px-5 py-2">
+        <Menu.Button className="flex items-center rounded-md px-5 py-2 font-medium transition-all duration-150 hover:bg-[#052b6362]">
           {name}
           <HiChevronDown
-            className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+            className="-mr-1 ml-2 h-5 w-5 text-violet-200 hover:text-violet-100"
             aria-hidden="true"
           />
         </Menu.Button>
@@ -24,12 +24,12 @@ export default function DropdownMenu({ name, routes }) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute left-1/2 translate-x-[-50%] mt-2 w-[140px] origin-top-right divide-y rounded-md ring-opacity-5 focus:outline-none shadow-xl">
-          <div className="flex flex-col items-center px-1 py-1 bg-[#082551] rounded-md">
+        <Menu.Items className="absolute left-1/2 mt-2 w-[150px] origin-top-right translate-x-[-50%] divide-y rounded-md shadow-xl ring-opacity-5 focus:outline-none">
+          <div className="flex flex-col items-center rounded-md bg-c-white px-1 py-1">
             {routes.map((route) => (
               <Menu.Item>
                 <Link
-                  className="hover:bg-opacity-100 transition-all duration-150 bg-c-blue bg-opacity-0 p-3 rounded-md w-full text-center font-medium"
+                  className="w-full rounded-md bg-c-blue bg-opacity-0 px-6 py-3 text-center font-medium text-c-blue transition-all duration-150 hover:bg-opacity-100 hover:text-c-white"
                   href={route.path}
                 >
                   {route.name}

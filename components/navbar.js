@@ -12,6 +12,7 @@ const ROUTES = [
       { name: 'Junior NAO', path: '/events/junior-nao' },
       { name: 'JNCC', path: '/events/jncc' },
       { name: 'A-Talk', path: '/events/atalk' },
+      { name: 'Training', path: '/events/training' },
       { name: 'GRAND', path: '/events/grand' },
       { name: 'Comvis', path: '/events/company-visit' },
     ],
@@ -27,13 +28,13 @@ export default function Navbar({ fixedBg = false }) {
   return (
     <nav
       className={clsx(
-        'text-white fixed top-0 z-[999] w-full font-montserrat transition-all duration-500 left-0',
+        'fixed left-0 top-0 z-[999] w-full font-montserrat text-white transition-all duration-500',
         scrollPosition > 100 ? 'bg-c-blue shadow-xl' : '',
         fixedBg ? 'bg-c-blue' : ''
       )}
     >
-      <div className="container w-full flex items-center justify-between py-4">
-        <div className="text-white font-bold text-xl">
+      <div className="container flex w-full items-center justify-between py-4">
+        <div className="text-xl font-bold text-white">
           <img
             src="/images/logo-horizontal.png"
             alt="Logo GMAD"
@@ -44,7 +45,7 @@ export default function Navbar({ fixedBg = false }) {
           {ROUTES.map((route) => {
             return route.path ? (
               <Link
-                className="font-medium hover:bg-[#052b6362] transition-all duration-150 rounded-md px-5 py-2"
+                className="rounded-md px-5 py-2 font-medium transition-all duration-150 hover:bg-[#052b6362]"
                 href={route.path}
               >
                 {route.name}
