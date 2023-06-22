@@ -182,11 +182,10 @@ export default function Home() {
 					<div className="flex w-full flex-col items-center rounded-3xl bg-c-blue md:h-96 md:flex-row xl:h-[520px]">
 						<iframe
 							className="h-[35vh] w-full rounded-t-3xl bg-ilust-grand-theme bg-cover bg-center md:h-full md:w-1/2 md:rounded-l-3xl md:rounded-tr-none"
-							src="https://www.youtube.com/embed/zu06u8GXk9Y?controls=0"
-							title="YouTube video player"
-							frameborder="0"
+							src="https://www.youtube.com/embed/zu06u8GXk9Y?autoplay=1&controls=0"
+							title="GADJAH MADA ACCOUNTING DAYS 2023 OFFICIAL TEASER"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
+							allowFullScreen
 						></iframe>
 						<div className="flex w-full flex-col justify-center gap-2 px-6 py-6 md:w-1/2 md:gap-9 xl:w-2/3 xl:px-[90px]">
 							<h3 className="font-belleza text-mobile-h3 text-c-orange md:text-h3">Grand Theme</h3>
@@ -206,27 +205,31 @@ export default function Home() {
 					<div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-3 xl:gap-x-28 xl:gap-y-24">
 						{events.map((event, index) => (
 							<div
-								className="col-span-1 flex flex-col items-center justify-center gap-2 rounded-3xl bg-white p-3 text-center shadow-basic md:h-[450px] md:gap-6 md:p-6 md:px-8"
+								className="col-span-1 flex h-full flex-col items-center justify-between gap-2 rounded-3xl bg-white p-3 text-center shadow-basic md:h-full md:gap-8 md:p-6 md:px-8"
 								key={index}
 							>
-								<div className="w-full rounded-2xl bg-c-blue py-8">
-									<Image
-										src={event.imgUrl}
-										alt={event.imgAlt}
-										width={183}
-										height={135}
-										className="mx-auto"
-									></Image>
+								<div class="flex flex-col gap-2 md:gap-4">
+									<div className="w-full rounded-2xl bg-c-blue py-8">
+										<Image
+											src={event.imgUrl}
+											alt={event.imgAlt}
+											width={183}
+											height={135}
+											className="mx-auto"
+										></Image>
+									</div>
+									<p className="font-bold text-c-orange">{event.title}</p>
+									<p className="text-lg font-semibold text-c-blue md:text-2xl xl:text-4xl">
+										{event.subtitle}
+									</p>
 								</div>
-								<p className="font-bold text-c-orange">{event.title}</p>
-								<p className="text-lg font-semibold text-c-blue md:text-2xl md:text-4xl">
-									{event.subtitle}
-								</p>
 								<a
+									target="_blank"
+									rel="noreferrer noopener"
 									href={event.buttonTo}
 									className="self-items-end rounded-3xl border border-c-orange bg-white px-6 py-2 font-semibold text-c-orange transition hover:bg-c-orange hover:text-white md:px-12 md:py-4"
 								>
-									See More
+									See Details
 								</a>
 							</div>
 						))}
@@ -324,6 +327,8 @@ export default function Home() {
 								<a
 									href="https://wa.me/+6281511115195"
 									className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
 										className="mr-2 inline 2xl:mr-4"
@@ -338,6 +343,8 @@ export default function Home() {
 								<a
 									href="https://wa.me/+6285800318595"
 									className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+									target="_blank"
+									rel="noopener noreferrer"
 								>
 									<img
 										className="mr-2 inline 2xl:mr-4"
