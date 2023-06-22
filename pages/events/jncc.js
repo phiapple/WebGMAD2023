@@ -134,7 +134,7 @@ export default function Jncc() {
           <div className="mt-[32px] md:mt-[60px]">
             <a
               className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
-              href=""
+              href="https://bit.ly/RegistrationJNCC2023"
             >
               Register Now
             </a>

@@ -141,7 +141,7 @@ const Nao = () => {
           <div className="md:mt-[60px] mt-[32px]">
             <a
               className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
-              href=""
+              href="https://bit.ly/RegistrationNAO2023"
             >
               Register Now
             </a>

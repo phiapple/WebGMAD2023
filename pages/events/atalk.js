@@ -1,5 +1,5 @@
-import Footer from '../../components/footer';
-import Navbar from '../../components/navbar';
+import Footer from "../../components/footer";
+import Navbar from "../../components/navbar";
 import TImelineCardRight from "../../components/card/TimelineCard/TImelineRightCard";
 import TimelineCardLeft from "../../components/card/TimelineCard/TimelineLeftCard";
 
@@ -35,7 +35,13 @@ export default function Atalk() {
               </h2>
               <div className="h-6"></div>
               <p className="text-center text-sm text-white md:text-lg">
-              A-Talk or Accounting Talk is a talk show consisting of two sessions that discuss current issues by inviting competent speakers as a platform for discussion, confirmation, and resolution of those issues, guided by a moderator. This year, A-Talk will feature speakers from the government and companies. Each speaker will be present in every session of Accounting Talk (A-Talk).
+                A-Talk or Accounting Talk is a talk show consisting of two
+                sessions that discuss current issues by inviting competent
+                speakers as a platform for discussion, confirmation, and
+                resolution of those issues, guided by a moderator. This year,
+                A-Talk will feature speakers from the government and companies.
+                Each speaker will be present in every session of Accounting Talk
+                (A-Talk).
               </p>
             </div>
           </div>
@@ -48,7 +54,7 @@ export default function Atalk() {
               </h2>
             </div>
             <div className="flex w-screen justify-center">
-              <div className="flex-col mt-[24px]">
+              <div className="mt-[24px] flex-col">
                 {/* left component */}
                 {leftTimeline.map((data, index) => (
                   <div key={index}>
@@ -90,10 +96,10 @@ export default function Atalk() {
           </div>
         </section>
         <section className="flex h-[261px] w-full flex-col items-center justify-center bg-c-blue md:h-[372px]">
-          <h2 className="font-belleza text-mobile-h2 xl:text-h2 text-white">
+          <h2 className="font-belleza text-mobile-h2 text-white xl:text-h2">
             So, What Are You Waiting For ?
           </h2>
-          <div className="md:mt-[60px] mt-[32px]">
+          <div className="mt-[32px] md:mt-[60px]">
             <a
               className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
               href=""
@@ -103,44 +109,44 @@ export default function Atalk() {
           </div>
         </section>
         <section className="">
-				<div className=" container mx-auto py-[32px] md:py-[120px]">
-					<div className="flex w-full flex-col items-center rounded-3xl bg-c-blue px-[16px] py-[32px] md:flex-row lg:px-[100px] lg:py-[120px]">
-						<h2 className="font-belleza text-mobile-h2 text-c-white md:w-1/2 xl:text-h2">
-							Contact Us
-						</h2>
-						<div className="flex flex-col text-center text-white max-md:mt-12 md:w-full md:flex-row xl:gap-6 xl:text-2xl">
-							<div className="md:w-1/2">
-								<p className="mb-3 md:mb-6">Sponsorship</p>
-								<a
-									href="https://wa.me/+6281511115195"
-									className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
-								>
-									<img
-										className="mr-2 inline 2xl:mr-4"
-										src="/images/icons/WhatsApp.svg"
-										alt="Icon WhatsApp"
-									/>
-									081511115195
-								</a>
-							</div>
-							<div className="md:w-1/2">
-								<p className="mb-3 md:mb-6">Media Partnership</p>
-								<a
-									href="https://wa.me/+6285800318595"
-									className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
-								>
-									<img
-										className="mr-2 inline 2xl:mr-4"
-										src="/images/icons/WhatsApp.svg"
-										alt="Icon WhatsApp"
-									/>
-									085800318595
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div className=" container mx-auto py-[32px] md:py-[120px]">
+            <div className="flex w-full flex-col items-center rounded-3xl bg-c-blue px-[16px] py-[32px] md:flex-row lg:px-[100px] lg:py-[120px]">
+              <h2 className="font-belleza text-mobile-h2 text-c-white md:w-1/2 xl:text-h2">
+                Contact Us
+              </h2>
+              <div className="flex flex-col text-center text-white max-md:mt-12 md:w-full md:flex-row xl:gap-6 xl:text-2xl">
+                <div className="md:w-1/2">
+                  <p className="mb-3 md:mb-6">Sponsorship</p>
+                  <a
+                    href="https://wa.me/+6281511115195"
+                    className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+                  >
+                    <img
+                      className="mr-2 inline 2xl:mr-4"
+                      src="/images/icons/WhatsApp.svg"
+                      alt="Icon WhatsApp"
+                    />
+                    081511115195
+                  </a>
+                </div>
+                <div className="md:w-1/2">
+                  <p className="mb-3 md:mb-6">Media Partnership</p>
+                  <a
+                    href="https://wa.me/+6285800318595"
+                    className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+                  >
+                    <img
+                      className="mr-2 inline 2xl:mr-4"
+                      src="/images/icons/WhatsApp.svg"
+                      alt="Icon WhatsApp"
+                    />
+                    085800318595
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer fixedBg></Footer>
       </div>
     </>
