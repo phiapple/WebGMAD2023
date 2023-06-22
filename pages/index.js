@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const events = [
   {
@@ -256,6 +257,8 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+      <Footer fixedBg></Footer>
 		</div>
 	);
 }

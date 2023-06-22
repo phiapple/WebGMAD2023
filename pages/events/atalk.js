@@ -1,3 +1,4 @@
+import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 
 export default function Atalk() {
@@ -8,8 +9,8 @@ export default function Atalk() {
       <div className='h-[82px]'></div>
 
       {/* content */}
-      <div className='w-full min-h-screen-no-header bg-c-blue text-white'>
-        <div className='mx-auto container bg-c-blue min-h-screen-no-header grid place-items-center'>
+      <div className='w-full min-h-screen-no-header bg-gradient-to-b from-c-blue to-c-green text-white'>
+        <div className='mx-auto container min-h-screen-no-header grid place-items-center'>
           <div className='bg-event-card-atalk bg-cover w-full aspect-[16/10] flex flex-col justify-center items-center p-32 drop-shadow-lg'>
             <h3 className='font-belleza text-3xl text-center text-c-orange'>A-Talk</h3>
             <h2 className='font-belleza text-6xl text-center'>Accounting Talk</h2>
@@ -18,6 +19,9 @@ export default function Atalk() {
           </div>
         </div>
       </div>
+
+      {/* footer */}
+      <Footer fixedBg></Footer>
     </div>
   );
 }

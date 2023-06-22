@@ -1,3 +1,4 @@
+import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 
 export default function CompanyVisit() {
@@ -17,6 +18,9 @@ export default function CompanyVisit() {
           </div>
         </div>
       </div>
+
+      {/* footer */}
+      <Footer fixedBg></Footer>
     </div>
   );
 }
