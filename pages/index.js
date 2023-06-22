@@ -54,13 +54,13 @@ const events = [
 const pastSponsor = [
 	{
 		name: 'CIMB Digital Lounge',
-		imgUrl: '/images/partners/cimb.png',
+		imgUrl: '/images/partners/cimb2.png',
 		imgAlt: 'CIMB logo',
 		span: 'md:col-span-6',
 	},
 	{
 		name: 'Taspen Properti',
-		imgUrl: '/images/partners/taspen.png',
+		imgUrl: '/images/partners/taspen2.png',
 		imgAlt: 'Taspen logo',
 		span: 'md:col-span-6',
 	},
@@ -69,67 +69,67 @@ const pastSponsor = [
 const pastMedpart = [
 	{
 		name: 'Istakalisa',
-		imgUrl: '/images/partners/medpart/istakalisa.png',
+		imgUrl: '/images/partners/medpart/istakalisa2.png',
 		imgAlt: 'Istakalisa logo',
-		span: 'md:col-span-4',
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'ADI TV',
-		imgUrl: '/images/partners/medpart/aditv-big.png',
+		imgUrl: '/images/partners/medpart/aditv.png',
 		imgAlt: 'Adi TV logo',
-		span: 'md:col-span-4',
+		span: 'col-span-2 md:col-span-6',
 	},
 	{
 		name: 'Petra FM',
-		imgUrl: '/images/partners/medpart/petra.png',
+		imgUrl: '/images/partners/medpart/petra2.png',
 		imgAlt: 'Petra FM logo',
-		span: 'md:col-span-4',
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'Magenta',
-		imgUrl: '/images/partners/medpart/magenta-small.png',
+		imgUrl: '/images/partners/medpart/magenta.png',
 		imgAlt: 'Magenta logo',
 		span: 'md:col-span-3',
 	},
 	{
 		name: 'RBTV',
-		imgUrl: '/images/partners/medpart/rbtv-small.png',
+		imgUrl: '/images/partners/medpart/rbtv.png',
 		imgAlt: 'RBTV logo',
 		span: 'md:col-span-3',
 	},
 	{
 		name: 'Geronimo',
-		imgUrl: '/images/partners/medpart/geronimo.png',
+		imgUrl: '/images/partners/medpart/geronimo2.png',
 		imgAlt: 'Geronimo logo',
 		span: 'md:col-span-3',
 	},
 	{
 		name: 'StarFM',
-		imgUrl: '/images/partners/medpart/starfm.png',
+		imgUrl: '/images/partners/medpart/starfm2.png',
 		imgAlt: 'StarFM logo',
 		span: 'md:col-span-3',
 	},
 	{
 		name: 'HIMA Akuntansi UNAIR',
-		imgUrl: '/images/partners/medpart/hima-unair.png',
+		imgUrl: '/images/partners/medpart/hima-unair2.png',
 		imgAlt: 'Hima Akuntansi UNAIR logo',
-		span: 'md:col-span-3',
+		span: 'md:col-span-4',
 	},
 	{
 		name: 'HIMAJA UNESA',
-		imgUrl: '/images/partners/medpart/himajaunesa.png',
+		imgUrl: '/images/partners/medpart/himajaunesa2.png',
 		imgAlt: 'HIMAJA UNESA logo',
-		span: 'md:col-span-3',
+		span: 'md:col-span-2',
 	},
 	{
 		name: 'Ruang Mahasiswa',
-		imgUrl: '/images/partners/medpart/ruangmhs.png',
+		imgUrl: '/images/partners/medpart/ruangmhs2.png',
 		imgAlt: 'Ruang Mahasiswa logo',
 		span: 'md:col-span-3',
 	},
 	{
 		name: 'Eventtik',
-		imgUrl: '/images/partners/medpart/eventtik.png',
+		imgUrl: '/images/partners/medpart/eventtik2.png',
 		imgAlt: 'Eventtik logo',
 		span: 'md:col-span-3',
 	},
@@ -290,7 +290,7 @@ export default function Home() {
 						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Sponsors</h3>
 						<div className="grid h-fit w-full grid-cols-1 place-items-center gap-8 md:grid-cols-2 md:gap-30">
 							{pastSponsor.map((item, index) => (
-								<div className={`relative aspect-square w-40 lg:w-80`} key={index}>
+								<div className={`relative aspect-square w-40 lg:w-64 xl:w-80`} key={index}>
 									<Image
 										src={item.imgUrl}
 										alt={item.imgAlt}
@@ -301,11 +301,11 @@ export default function Home() {
 							))}
 						</div>
 					</div>
-					<div className="flex w-full flex-col px-8 pt-20 text-center">
+					<div className="flex flex-col px-8 pt-20 text-center md:w-3/4">
 						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Media Partners</h3>
-						<div className="grid w-full grid-cols-2 gap-8 lg:grid-cols-12 lg:gap-30">
+						<div className="grid w-full grid-cols-2 place-content-center items-center md:grid-cols-12">
 							{pastMedpart.map((item, index) => (
-								<div className={`${item.span} relative aspect-square w-full`} key={index}>
+								<div className={`${item.span} relative mx-4 aspect-square`} key={index}>
 									<Image
 										src={item.imgUrl}
 										alt={item.imgAlt}
