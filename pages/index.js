@@ -225,7 +225,7 @@ export default function Home() {
 								</div>
 								<a
 									target="_blank"
-									rel="noreferrer noopener"
+									rel="noopener noreferrer"
 									href={event.buttonTo}
 									className="self-items-end rounded-3xl border border-c-orange bg-white px-6 py-2 font-semibold text-c-orange transition hover:bg-c-orange hover:text-white md:px-12 md:py-4"
 								>
@@ -260,6 +260,8 @@ export default function Home() {
 							<a
 								className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
 								href="https://www.instagram.com/gmad.ugm/"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
 								Instagram
 							</a>
@@ -268,6 +270,8 @@ export default function Home() {
 							<a
 								className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
 								href="https://liff.line.me/1645278921-kWRPP32q/?accountId=aju6891t"
+								target="_blank"
+								rel="noopener noreferrer"
 							>
 								Line
 							</a>
