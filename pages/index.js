@@ -6,36 +6,36 @@ const events = [
 	{
 		title: 'NAO',
 		subtitle: 'National Accounting Olympiad',
-		buttonTo: '/',
+		buttonTo: '/events/nao',
 		regLink: 'https://bit.ly/RegistrationNAO2023',
 	},
 	{
 		title: 'Junior NAO',
 		subtitle: 'Junior National Accounting Olympiad',
-		buttonTo: '/',
+		buttonTo: '/events/junior-nao',
 		regLink: 'https://bit.ly/RegistrationNAOJunior2023',
 	},
 	{
 		title: 'JNCC',
 		subtitle: 'Jogjakarta National Case Competition',
-		buttonTo: '/',
+		buttonTo: '/events/jndcc',
 		regLink: 'https://bit.ly/RegistrationJNCC2023',
 	},
 	{
 		title: 'A-Talks',
 		subtitle: 'Accounting Talk',
-		buttonTo: '/',
+		buttonTo: '/events/atalks',
 		regLink: 'https://bit.ly/RegistrationA-Talk2023',
 	},
 	{
 		title: 'GRAND',
 		subtitle: 'GMAD Awarding and Networking Day',
-		buttonTo: '/',
+		buttonTo: '/events/grand',
 	},
 	{
 		title: '',
 		subtitle: 'Company Visit',
-		buttonTo: '/',
+		buttonTo: '/events/company-visit',
 	},
 ];
 
@@ -168,17 +168,14 @@ export default function Home() {
 			<section className="-translate-y-[50%]">
 				<div className="container mx-auto">
 					<div className="flex w-full flex-col items-center rounded-3xl bg-c-blue md:h-96 md:flex-row xl:h-[520px]">
-						<div className="h-[35vh] w-full rounded-t-3xl bg-ilust-grand-theme bg-cover bg-center md:h-full md:w-1/2 md:rounded-l-3xl md:rounded-tr-none xl:w-1/3">
-							{/* <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/zu06u8GXk9Y"
-                title="GMAD 2023"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe> */}
-						</div>
+						<iframe
+							className="h-[35vh] w-full rounded-t-3xl bg-ilust-grand-theme bg-cover bg-center md:h-full md:w-1/2 md:rounded-l-3xl md:rounded-tr-none"
+							src="https://www.youtube.com/embed/zu06u8GXk9Y?controls=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
 						<div className="flex w-full flex-col justify-center gap-2 px-6 py-6 md:w-1/2 md:gap-9 xl:w-2/3 xl:px-[90px]">
 							<h3 className="font-belleza text-mobile-h3 text-c-orange md:text-h3">Grand Theme</h3>
 							<p className="text-2xl font-medium text-c-white 2xl:text-p1">
@@ -194,22 +191,16 @@ export default function Home() {
 					<h2 className="mb-16 text-center font-belleza text-mobile-h2 text-c-orange xl:text-h2">
 						Our Main Events
 					</h2>
-					<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 xl:gap-x-28 xl:gap-y-24">
+					<div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-3 xl:gap-x-28 xl:gap-y-24">
 						{events.map((event, index) => (
 							<div
 								className="col-span-1 flex flex-col items-center justify-center gap-2 rounded-3xl bg-white p-3 text-center shadow-basic md:h-[450px] md:gap-6 md:p-6 md:px-8"
 								key={index}
 							>
 								<p className="font-bold text-c-orange">{event.title}</p>
-								<p className="text-2xl font-semibold text-c-blue md:text-4xl">{event.subtitle}</p>
-								{event.regLink ? (
-									<a
-										href={event.regLink}
-										className="self-items-end rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
-									>
-										Register
-									</a>
-								) : null}
+								<p className="text-lg font-semibold text-c-blue md:text-2xl md:text-4xl">
+									{event.subtitle}
+								</p>
 								<a
 									href={event.buttonTo}
 									className="self-items-end rounded-3xl border border-c-orange bg-white px-6 py-2 font-semibold text-c-orange transition hover:bg-c-orange hover:text-white md:px-12 md:py-4"
