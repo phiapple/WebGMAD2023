@@ -1,90 +1,146 @@
 import Image from 'next/image';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const events = [
 	{
 		title: 'NAO',
 		subtitle: 'National Accounting Olympiad',
-		imgUrl: './images/events/nao.svg',
-		imgAlt: 'nao',
-		buttonTo: '/',
+		buttonTo: '/events/nao',
+		regLink: 'https://bit.ly/RegistrationNAO2023',
+		imgUrl: '/images/events/nao.svg',
+		imgAlt: 'NAO Image',
 	},
 	{
-		title: 'NAO Junior',
-		subtitle: 'National Accounting Olympiad Junior',
+		title: 'Junior NAO',
+		subtitle: 'Junior National Accounting Olympiad',
+		buttonTo: '/events/junior-nao',
+		regLink: 'https://bit.ly/RegistrationNAOJunior2023',
 		imgUrl: '/images/events/nao.svg',
-		imgAlt: 'naojr',
-		buttonTo: '/',
+		imgAlt: 'Junior NAO Image ',
 	},
 	{
 		title: 'JNCC',
 		subtitle: 'Jogjakarta National Case Competition',
+		buttonTo: '/events/jndcc',
+		regLink: 'https://bit.ly/RegistrationJNCC2023',
 		imgUrl: '/images/events/nao.svg',
-		imgAlt: 'jncc',
-		buttonTo: '/',
+		imgAlt: 'JNCC Image ',
 	},
 	{
 		title: 'A-Talks',
 		subtitle: 'Accounting Talk',
+		buttonTo: '/events/atalks',
+		regLink: 'https://bit.ly/RegistrationA-Talk2023',
 		imgUrl: '/images/events/nao.svg',
-		imgAlt: 'atalk',
-		buttonTo: '/',
+		imgAlt: 'A-Talks Image',
 	},
 	{
 		title: 'GRAND',
 		subtitle: 'GMAD Awarding and Networking Day',
+		buttonTo: '/events/grand',
 		imgUrl: '/images/events/nao.svg',
-		imgAlt: 'grand',
-		buttonTo: '/',
+		imgAlt: 'GRAND Image',
 	},
 	{
-		title: '',
+		title: 'Comvis',
 		subtitle: 'Company Visit',
+		buttonTo: '/events/company-visit',
 		imgUrl: '/images/events/nao.svg',
-		imgAlt: 'companyvisit',
-		buttonTo: '/',
+		imgAlt: 'Company Visit Image ',
 	},
 ];
 
-const socmed = [
+const pastSponsor = [
 	{
-		src: '/images/instagram.png',
-		alt: 'Instagram',
-		width: 386.15,
-		height: 740,
-		href: '/',
+		name: 'CIMB Digital Lounge',
+		imgUrl: '/images/partners/cimb.png',
+		imgAlt: 'CIMB logo',
+		span: 'md:col-span-6',
 	},
 	{
-		src: '/images/line.png',
-		alt: 'Line',
-		width: 292.89,
-		height: 740,
-		href: '/',
+		name: 'Taspen Properti',
+		imgUrl: '/images/partners/taspen.png',
+		imgAlt: 'Taspen logo',
+		span: 'md:col-span-6',
 	},
 ];
 
-const pastParticipants = [
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-];
-
-const pastPartners = [
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
-	{ name: '' },
+const pastMedpart = [
+	{
+		name: 'Istakalisa',
+		imgUrl: '/images/partners/medpart/istakalisa.png',
+		imgAlt: 'Istakalisa logo',
+		span: 'md:col-span-4',
+	},
+	{
+		name: 'ADI TV',
+		imgUrl: '/images/partners/medpart/aditv-big.png',
+		imgAlt: 'Adi TV logo',
+		span: 'md:col-span-4',
+	},
+	{
+		name: 'Petra FM',
+		imgUrl: '/images/partners/medpart/petra.png',
+		imgAlt: 'Petra FM logo',
+		span: 'md:col-span-4',
+	},
+	{
+		name: 'Magenta',
+		imgUrl: '/images/partners/medpart/magenta-small.png',
+		imgAlt: 'Magenta logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'RBTV',
+		imgUrl: '/images/partners/medpart/rbtv-small.png',
+		imgAlt: 'RBTV logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'Geronimo',
+		imgUrl: '/images/partners/medpart/geronimo.png',
+		imgAlt: 'Geronimo logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'StarFM',
+		imgUrl: '/images/partners/medpart/starfm.png',
+		imgAlt: 'StarFM logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'HIMA Akuntansi UNAIR',
+		imgUrl: '/images/partners/medpart/hima-unair.png',
+		imgAlt: 'Hima Akuntansi UNAIR logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'HIMAJA UNESA',
+		imgUrl: '/images/partners/medpart/himajaunesa.png',
+		imgAlt: 'HIMAJA UNESA logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'Ruang Mahasiswa',
+		imgUrl: '/images/partners/medpart/ruangmhs.png',
+		imgAlt: 'Ruang Mahasiswa logo',
+		span: 'md:col-span-3',
+	},
+	{
+		name: 'Eventtik',
+		imgUrl: '/images/partners/medpart/eventtik.png',
+		imgAlt: 'Eventtik logo',
+		span: 'md:col-span-3',
+	},
 ];
 
 export default function Home() {
 	return (
-		<div className="w-screen bg-[#eeeeee] font-montserrat">
+		<div className="w-screen bg-[#F0F0F0] font-montserrat">
+			<Navbar></Navbar>
 			<section className="relative grid place-content-center bg-gradient-to-b from-c-blue to-c-green pt-24 md:pt-[200px]">
-				<div className="container relative mx-auto flex flex-col-reverse items-center justify-center md:flex-row xl:space-x-30">
+				<div className="container relative mx-auto flex flex-col-reverse items-center justify-between md:flex-row">
 					<div className="absolute h-[100vh] w-full bg-hero-ornament bg-cover bg-center sm:hidden"></div>
 					<div className="relative flex flex-col gap-9 md:w-[64%]">
 						<div className="absolute hidden h-[693px] bg-hero-ornament bg-cover bg-center sm:-left-64 sm:-top-64 sm:block sm:w-[800px] md:-left-30 md:-top-32 xl:w-[985px]"></div>
@@ -101,7 +157,7 @@ export default function Home() {
 							accounting.
 						</p>
 						<a
-							href="/"
+							href="#our-main-events"
 							className="relative w-fit rounded-full bg-c-orange px-6 py-2 text-lg font-medium text-c-white shadow-basic lg:px-12 lg:py-4 lg:text-2xl"
 						>
 							Register Now
@@ -124,7 +180,14 @@ export default function Home() {
 			<section className="-translate-y-[50%]">
 				<div className="container mx-auto">
 					<div className="flex w-full flex-col items-center rounded-3xl bg-c-blue md:h-96 md:flex-row xl:h-[520px]">
-						<div className="h-[35vh] w-full rounded-t-3xl bg-ilust-grand-theme bg-cover bg-center md:h-full md:w-1/2 md:rounded-l-3xl md:rounded-tr-none xl:w-1/3"></div>
+						<iframe
+							className="h-[35vh] w-full rounded-t-3xl bg-ilust-grand-theme bg-cover bg-center md:h-full md:w-1/2 md:rounded-l-3xl md:rounded-tr-none"
+							src="https://www.youtube.com/embed/zu06u8GXk9Y?controls=0"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
 						<div className="flex w-full flex-col justify-center gap-2 px-6 py-6 md:w-1/2 md:gap-9 xl:w-2/3 xl:px-[90px]">
 							<h3 className="font-belleza text-mobile-h3 text-c-orange md:text-h3">Grand Theme</h3>
 							<p className="text-2xl font-medium text-c-white 2xl:text-p1">
@@ -135,14 +198,17 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="mb-14 md:mb-[200px]">
+			<section className="mb-14 md:mb-[200px]" id="our-main-events">
 				<div className="container mx-auto">
 					<h2 className="mb-16 text-center font-belleza text-mobile-h2 text-c-orange xl:text-h2">
 						Our Main Events
 					</h2>
-					<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 xl:gap-x-28 xl:gap-y-24">
+					<div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-3 xl:gap-x-28 xl:gap-y-24">
 						{events.map((event, index) => (
-							<div className="col-span-1 flex flex-col items-center justify-between gap-2 rounded-3xl bg-white p-3 shadow-basic md:h-[450px] md:gap-8 md:p-6">
+							<div
+								className="col-span-1 flex flex-col items-center justify-center gap-2 rounded-3xl bg-white p-3 text-center shadow-basic md:h-[450px] md:gap-6 md:p-6 md:px-8"
+								key={index}
+							>
 								<div className="w-full rounded-2xl bg-c-blue py-8">
 									<Image
 										src={event.imgUrl}
@@ -152,13 +218,13 @@ export default function Home() {
 										className="mx-auto"
 									></Image>
 								</div>
-								<div className="text-center">
-									<p className="font-bold text-c-orange md:mb-4">{event.title}</p>
-									<p className="text-c-blue">{event.subtitle}</p>
-								</div>
+								<p className="font-bold text-c-orange">{event.title}</p>
+								<p className="text-lg font-semibold text-c-blue md:text-2xl md:text-4xl">
+									{event.subtitle}
+								</p>
 								<a
 									href={event.buttonTo}
-									className="self-items-end rounded-3xl border border-c-orange bg-white px-6 py-2 text-c-orange transition hover:bg-c-orange hover:text-white md:px-12 md:py-4"
+									className="self-items-end rounded-3xl border border-c-orange bg-white px-6 py-2 font-semibold text-c-orange transition hover:bg-c-orange hover:text-white md:px-12 md:py-4"
 								>
 									See More
 								</a>
@@ -180,43 +246,68 @@ export default function Home() {
 							Lorem ipsum dolor sit amet con
 						</p>
 					</div>
-					<div className="relative flex h-fit">
-						{socmed.map((socmed, index) => (
-							<a href={socmed.href} key={index}>
-								<Image
-									src={socmed.src}
-									alt={socmed.alt}
-									width={socmed.width}
-									height={socmed.height}
-								></Image>
+					<div className="relative flex xl:h-[789px]">
+						<div className="flex flex-col items-center gap-2 md:gap-8">
+							<Image
+								src="/images/instagram2.png"
+								alt="Instagram"
+								width={386.15}
+								height={500}
+							></Image>
+							<a
+								className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
+								href="https://www.instagram.com/gmad.ugm/"
+							>
+								Instagram
 							</a>
-						))}
+						</div>
+						<div className="flex flex-col items-center justify-end gap-2 md:gap-8">
+							<a
+								className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
+								href="https://liff.line.me/1645278921-kWRPP32q/?accountId=aju6891t"
+							>
+								Line
+							</a>
+							<Image src="/images/line2.png" alt="Instagram" width={292.89} height={500}></Image>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<section className="">
-				<div className="container mx-auto flex flex-col items-center justify-center pt-16 md:gap-16 md:py-[120px]">
-					<h2 className="font-belleza text-mobile-h2 text-c-orange max-md:mb-8 xl:text-h2">
-						Our Past Participants
-					</h2>
-					<div className="grid grid-cols-2 gap-12 sm:grid-cols-4 md:gap-16 xl:grid-cols-6">
-						{pastParticipants.map((item, index) => (
-							<div className="w-100 aspect-square w-[100px] rounded-3xl bg-c-blue"></div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			<section className="">
-				<div className="container mx-auto flex flex-col items-center justify-center gap-8 py-16 md:gap-16 md:py-[120px]">
+				<div className="container mx-auto flex flex-col items-center justify-center gap-8 py-16 md:gap-30 md:py-[120px]">
 					<h2 className="font-belleza text-mobile-h2 text-c-orange max-md:mb-8 xl:text-h2">
 						Our Past Partners
 					</h2>
-					<div className="grid grid-cols-2 gap-12 sm:grid-cols-4 md:gap-16 xl:grid-cols-6">
-						{pastPartners.map((item, index) => (
-							<div className="w-100 aspect-square w-[100px] rounded-3xl bg-c-blue"></div>
-						))}
+					<div className="flex w-1/2 flex-col text-center">
+						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Sponsors</h3>
+						<div className="grid h-fit w-full grid-cols-1 place-items-center gap-8 md:grid-cols-2 md:gap-30">
+							{pastSponsor.map((item, index) => (
+								<div className={`relative aspect-square w-40 lg:w-80`} key={index}>
+									<Image
+										src={item.imgUrl}
+										alt={item.imgAlt}
+										fill
+										style={{ objectFit: 'contain' }}
+									></Image>
+								</div>
+							))}
+						</div>
+					</div>
+					<div className="flex w-full flex-col px-8 pt-20 text-center">
+						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Media Partners</h3>
+						<div className="grid w-full grid-cols-2 gap-8 lg:grid-cols-12 lg:gap-30">
+							{pastMedpart.map((item, index) => (
+								<div className={`${item.span} relative aspect-square w-full`} key={index}>
+									<Image
+										src={item.imgUrl}
+										alt={item.imgAlt}
+										fill
+										style={{ objectFit: 'contain' }}
+									></Image>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</section>
@@ -224,13 +315,16 @@ export default function Home() {
 			<section className="">
 				<div className=" container mx-auto py-[32px] md:py-[120px]">
 					<div className="flex w-full flex-col items-center rounded-3xl bg-c-blue px-[16px] py-[32px] md:flex-row lg:px-[100px] lg:py-[120px]">
-						<h2 className="font-belleza text-mobile-h2 text-c-white xl:text-h2">
-							Let's Work Together!
+						<h2 className="font-belleza text-mobile-h2 text-c-white md:w-1/2 xl:text-h2">
+							Contact Us
 						</h2>
 						<div className="flex flex-col text-center text-white max-md:mt-12 md:w-full md:flex-row xl:gap-6 xl:text-2xl">
 							<div className="md:w-1/2">
 								<p className="mb-3 md:mb-6">Sponsorship</p>
-								<a href="/" className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16">
+								<a
+									href="https://wa.me/+6281511115195"
+									className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+								>
 									<img
 										className="mr-2 inline 2xl:mr-4"
 										src="/images/icons/WhatsApp.svg"
@@ -241,7 +335,10 @@ export default function Home() {
 							</div>
 							<div className="md:w-1/2">
 								<p className="mb-3 md:mb-6">Media Partnership</p>
-								<a href="/" className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16">
+								<a
+									href="https://wa.me/+6285800318595"
+									className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+								>
 									<img
 										className="mr-2 inline 2xl:mr-4"
 										src="/images/icons/WhatsApp.svg"
@@ -254,6 +351,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+			<Footer fixedBg></Footer>
 		</div>
 	);
 }
