@@ -2,6 +2,37 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import useScrollPosition from '../hooks/useScrollPosition';
 
+import {
+  BsLine,
+  BsLinkedin,
+  BsYoutube,
+  BsWhatsapp,
+  BsInstagram,
+} from 'react-icons/bs';
+
+const CONTACTS = [
+  {
+    name: '@gmad.ugm',
+    url: 'https://instagram.com/gmad.ugm',
+    icon: <BsInstagram className="h-5 w-5" />,
+  },
+  {
+    name: '@aju6891t',
+    url: '#',
+    icon: <BsLine className="h-5 w-5" />,
+  },
+  {
+    name: 'Gadjah Mada Accounting Days',
+    url: 'https://www.linkedin.com/company/gmad.ugm/',
+    icon: <BsLinkedin className="h-5 w-5" />,
+  },
+  {
+    name: 'Gadjah Mada Accounting Days',
+    url: 'https://www.youtube.com/@gadjahmadaaccountingdays4153',
+    icon: <BsYoutube className="h-5 w-5" />,
+  },
+];
+
 const ROUTES = [
   { name: 'Home', path: '/' },
   {
@@ -26,36 +57,27 @@ export default function Footer({ fixedBg = false }) {
   return (
     <footer
       className={clsx(
-        'text-white z-[999] w-full font-montserrat transition-all duration-500 left-0 h-[82px]',
+        'left-0 z-[999] h-[82px] w-full font-montserrat text-white transition-all duration-500',
         scrollPosition > 100 ? 'bg-c-blue shadow-xl' : '',
         fixedBg ? 'bg-c-blue' : ''
       )}
     >
-      <div className="container w-full flex items-center justify-between py-4">
-        <div className="text-white font-bold text-xl">
+      <div className="container flex w-full items-center justify-between py-4">
+        <div className="text-xl font-bold text-white">
           <img
             src="/images/logo-horizontal.png"
             alt="Logo GMAD"
             className="h-[50px]"
           />
         </div>
-        {/* <div className="flex gap-2">
-          {ROUTES.map((route) => {
-            return route.path ? (
-              <Link
-                className="font-medium hover:bg-[#052b6362] transition-all duration-150 rounded-md px-5 py-2"
-                href={route.path}
-              >
-                {route.name}
-              </Link>
-            ) : (
-              <DropdownMenu
-                name={route.name}
-                routes={route.routes}
-              ></DropdownMenu>
-            );
-          })}
-        </div> */}
+
+        <div className="flex gap-10">
+          {CONTACTS.map((contact) => (
+            <Link href={contact.url} target="_blank">
+              {contact.icon}
+            </Link>
+          ))}
+        </div>
       </div>
     </footer>
   );

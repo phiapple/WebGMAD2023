@@ -72,3 +72,11 @@ html {
 .h-header {
   height: 82px;
 }
+
+.h-screen-no-header-footer {
+  height: calc(100vh - 82px -82px);
+}
+
+.min-h-screen-no-header-footer {
+  min-height: calc(100vh - 82px - 82px);
+}

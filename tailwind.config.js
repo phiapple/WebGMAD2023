@@ -28,7 +28,6 @@ module.exports = {
         padding: {
           DEFAULT: '1rem',
           sm: '2rem',
-          lg: '7.5rem',
         },
       },
       fontSize: {
