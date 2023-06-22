@@ -44,13 +44,13 @@ const pastSponsor = [
 		name: 'CIMB Digital Lounge',
 		imgUrl: '/images/partners/cimb.png',
 		imgAlt: 'CIMB logo',
-		span: 3,
+		span: 'md:col-span-6',
 	},
 	{
 		name: 'Taspen Properti',
 		imgUrl: '/images/partners/taspen.png',
 		imgAlt: 'Taspen logo',
-		span: 3,
+		span: 'md:col-span-6',
 	},
 ];
 
@@ -59,67 +59,67 @@ const pastMedpart = [
 		name: 'Istakalisa',
 		imgUrl: '/images/partners/medpart/istakalisa.png',
 		imgAlt: 'Istakalisa logo',
-		span: 4,
+		span: 'md:col-span-4',
 	},
 	{
 		name: 'ADI TV',
 		imgUrl: '/images/partners/medpart/aditv-big.png',
 		imgAlt: 'Adi TV logo',
-		span: 4,
+		span: 'md:col-span-4',
 	},
 	{
 		name: 'Petra FM',
 		imgUrl: '/images/partners/medpart/petra.png',
 		imgAlt: 'Petra FM logo',
-		span: 4,
+		span: 'md:col-span-4',
 	},
 	{
 		name: 'Magenta',
 		imgUrl: '/images/partners/medpart/magenta-small.png',
 		imgAlt: 'Magenta logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'RBTV',
 		imgUrl: '/images/partners/medpart/rbtv-small.png',
 		imgAlt: 'RBTV logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'Geronimo',
 		imgUrl: '/images/partners/medpart/geronimo.png',
 		imgAlt: 'Geronimo logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'StarFM',
 		imgUrl: '/images/partners/medpart/starfm.png',
 		imgAlt: 'StarFM logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'HIMA Akuntansi UNAIR',
 		imgUrl: '/images/partners/medpart/hima-unair.png',
 		imgAlt: 'Hima Akuntansi UNAIR logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'HIMAJA UNESA',
 		imgUrl: '/images/partners/medpart/himajaunesa.png',
 		imgAlt: 'HIMAJA UNESA logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'Ruang Mahasiswa',
 		imgUrl: '/images/partners/medpart/ruangmhs.png',
 		imgAlt: 'Ruang Mahasiswa logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 	{
 		name: 'Eventtik',
 		imgUrl: '/images/partners/medpart/eventtik.png',
 		imgAlt: 'Eventtik logo',
-		span: 3,
+		span: 'md:col-span-3',
 	},
 ];
 
@@ -263,39 +263,35 @@ export default function Home() {
 			</section>
 
 			<section className="">
-				<div className="container mx-auto flex flex-col items-center justify-center gap-8 py-16 md:gap-16 md:py-[120px]">
+				<div className="container mx-auto flex flex-col items-center justify-center gap-8 py-16 md:gap-30 md:py-[120px]">
 					<h2 className="font-belleza text-mobile-h2 text-c-orange max-md:mb-8 xl:text-h2">
 						Our Past Partners
 					</h2>
-					<div className="w-1/2 text-center">
+					<div className="flex w-1/2 flex-col text-center">
 						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Sponsors</h3>
-						<div className="grid h-32 w-full grid-cols-6 gap-4">
+						<div className="grid h-fit w-full grid-cols-1 place-items-center gap-8 md:grid-cols-2 md:gap-30">
 							{pastSponsor.map((item, index) => (
-								<div className={`col-span-${item.span} w-full`} key={index}>
+								<div className={`relative aspect-square w-40 lg:w-80`} key={index}>
 									<Image
 										src={item.imgUrl}
 										alt={item.imgAlt}
-										width={0}
-										height={0}
-										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										fill
+										style={{ objectFit: 'contain' }}
 									></Image>
 								</div>
 							))}
 						</div>
 					</div>
-					<div className="w-full text-center">
+					<div className="flex w-full flex-col px-8 pt-20 text-center">
 						<h3 className="mb-14 text-[32px] font-semibold text-c-green">Media Partners</h3>
-						<div className="grid w-full grid-cols-12">
+						<div className="grid w-full grid-cols-2 gap-8 lg:grid-cols-12 lg:gap-30">
 							{pastMedpart.map((item, index) => (
-								<div className={`col-span-${item.span} w-full`} key={index}>
+								<div className={`${item.span} relative aspect-square w-full`} key={index}>
 									<Image
 										src={item.imgUrl}
 										alt={item.imgAlt}
-										width={0}
-										height={0}
-										sizes="100vw"
-										style={{ width: '100%', height: 'auto' }}
+										fill
+										style={{ objectFit: 'contain' }}
 									></Image>
 								</div>
 							))}
