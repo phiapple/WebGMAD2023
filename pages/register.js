@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { BiChevronRightCircle, BiChevronLeftCircle } from 'react-icons/bi';
 
 import 'swiper/css';
+import BaseLayout from '../components/baseLayout';
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 
@@ -68,76 +69,76 @@ const EVENTS = [
 export default function Register() {
   const [swiper, setSwiper] = useState();
 
-  console.log(swiper);
-
   return (
-    <div>
-      <Navbar fixedBg></Navbar>
-      {/* for navbar placeholder */}
-      <div className="h-[82px]"></div>
+    <BaseLayout seoTitle="GMAD • Register Events">
+      <div>
+        <Navbar fixedBg></Navbar>
+        {/* for navbar placeholder */}
+        <div className="h-[82px]"></div>
 
-      {/* content */}
-      <div className="min-h-screen-no-header relative w-full bg-gradient-to-b from-c-blue to-c-green text-white">
-        <div className="container">
-          <div className="min-h-screen-no-header flex w-[300px] flex-col items-center justify-center gap-6">
-            <h1 className="text-center font-belleza text-6xl">
-              Main <br />
-              Event
-            </h1>
-            <div className="flex gap-4">
-              <BiChevronLeftCircle
-                onClick={() => swiper.slidePrev()}
-                className="h-10 w-10 cursor-pointer"
-              ></BiChevronLeftCircle>
-              <BiChevronRightCircle
-                onClick={() => swiper.slideNext()}
-                className="h-10 w-10 cursor-pointer"
-              ></BiChevronRightCircle>
+        {/* content */}
+        <div className="min-h-screen-no-header relative w-full bg-gradient-to-b from-c-blue to-c-green text-white">
+          <div className="container">
+            <div className="min-h-screen-no-header flex w-[300px] flex-col items-center justify-center gap-6">
+              <h1 className="text-center font-belleza text-6xl">
+                Main <br />
+                Event
+              </h1>
+              <div className="flex gap-4">
+                <BiChevronLeftCircle
+                  onClick={() => swiper.slidePrev()}
+                  className="h-10 w-10 cursor-pointer"
+                ></BiChevronLeftCircle>
+                <BiChevronRightCircle
+                  onClick={() => swiper.slideNext()}
+                  className="h-10 w-10 cursor-pointer"
+                ></BiChevronRightCircle>
+              </div>
             </div>
+          </div>
+
+          <div className="absolute right-0 top-[20%]">
+            <Swiper
+              id="swiper-register"
+              className="absolute w-[800px]"
+              slidesPerView={'auto'}
+              pagination={{
+                clickable: true,
+              }}
+              // modules={[Pagination]}
+              onSwiper={(swiper) => setSwiper(swiper)}
+              grabCursor
+              breakpoints={{
+                0: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+              }}
+            >
+              {EVENTS.map((event, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <RegisterCard
+                      date={event.date}
+                      detailUrl={event.detailUrl}
+                      registerUrl={event.registerUrl}
+                      title={event.title}
+                      bg={event.bg}
+                    ></RegisterCard>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
 
-        <div className="absolute right-0 top-[20%]">
-          <Swiper
-            id="swiper-register"
-            className="absolute w-[800px]"
-            slidesPerView={'auto'}
-            pagination={{
-              clickable: true,
-            }}
-            // modules={[Pagination]}
-            onSwiper={(swiper) => setSwiper(swiper)}
-            grabCursor
-            breakpoints={{
-              0: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              1024: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-            }}
-          >
-            {EVENTS.map((event, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <RegisterCard
-                    date={event.date}
-                    detailUrl={event.detailUrl}
-                    registerUrl={event.registerUrl}
-                    title={event.title}
-                    bg={event.bg}
-                  ></RegisterCard>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
+        {/* footer */}
+        <Footer fixedBg></Footer>
       </div>
-
-      {/* footer */}
-      <Footer fixedBg></Footer>
-    </div>
+    </BaseLayout>
   );
 }
