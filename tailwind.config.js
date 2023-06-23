@@ -19,10 +19,10 @@ module.exports = {
 
     extend: {
       colors: {
-        "c-green": "#58B662",
-        "c-blue": "#041938",
-        "c-orange": "#f97701",
-        "c-white": "#F0F0F0",
+        'c-green': '#58B662',
+        'c-blue': '#041938',
+        'c-orange': '#f97701',
+        'c-white': '#F0F0F0',
       },
       container: {
         padding: {
@@ -59,7 +59,7 @@ module.exports = {
         'event-card-atalk': `url('/images/card/atalk.png')`,
         'event-card-grand': `url('/images/card/grand.png')`,
         'event-card-nao': `url('/images/card/nao.png')`,
-        'event-card-junior-nao': `url('/images/card/junior-nao.png')`,
+        'event-card-junior-nao': `url('/images/card/jnao.png')`,
         'event-card-jncc': `url('/images/card/jncc.png')`,
       },
     },
