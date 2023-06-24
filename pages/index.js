@@ -23,7 +23,7 @@ const events = [
   {
     title: 'JNCC',
     subtitle: 'Jogjakarta National Case Competition',
-    buttonTo: '/events/jndcc',
+    buttonTo: '/events/jncc',
     regLink: 'https://bit.ly/RegistrationJNCC2023',
     imgUrl: '/images/events/jncc.png',
     imgAlt: 'JNCC Image ',
@@ -46,7 +46,7 @@ const events = [
   {
     title: 'A-Talks',
     subtitle: 'Accounting Talk',
-    buttonTo: '/events/atalks',
+    buttonTo: '/events/atalk',
     regLink: 'https://bit.ly/RegistrationA-Talk2023',
     imgUrl: '/images/events/atalk.png',
     imgAlt: 'A-Talks Image',
