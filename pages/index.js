@@ -410,7 +410,9 @@ export default function Home() {
                     />
                     081511115195
                   </a>
-                  <p className="mt-3 md:mt-6 text-md text-c-green">Inneke Patricia</p>
+                  <p className="text-md mt-3 text-c-green md:mt-6">
+                    Inneke Patricia
+                  </p>
                 </div>
                 <div className="md:w-1/2">
                   <p className="mb-3 md:mb-6">Media Partnership</p>
@@ -427,7 +429,9 @@ export default function Home() {
                     />
                     085800318595
                   </a>
-                  <p className="mt-3 md:mt-6 text-md text-c-green">Listya Nur Aini</p>
+                  <p className="text-md mt-3 text-c-green md:mt-6">
+                    Listya Nur Aini
+                  </p>
                 </div>
               </div>
             </div>
