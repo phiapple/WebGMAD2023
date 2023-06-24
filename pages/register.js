@@ -77,9 +77,9 @@ export default function Register() {
         <div className="h-[82px]"></div>
 
         {/* content */}
-        <div className="min-h-screen-no-header relative w-full bg-gradient-to-b from-c-blue to-c-green text-white">
-          <div className="container">
-            <div className="min-h-screen-no-header flex w-[300px] flex-col items-center justify-center gap-6">
+        <div className="min-h-screen-no-header relative flex w-full flex-col items-center justify-center bg-gradient-to-b from-c-blue to-c-green text-white lg:block">
+          <div className="container flex flex-col items-center justify-center lg:block">
+            <div className="flex w-[300px] flex-col items-center justify-center gap-6 py-24 lg:absolute lg:top-[50%] lg:translate-y-[-50%] lg:py-0">
               <h1 className="text-center font-belleza text-6xl">
                 Main <br />
                 Event
@@ -97,25 +97,28 @@ export default function Register() {
             </div>
           </div>
 
-          <div className="absolute right-0 top-[20%]">
+          <div className="pb-16 lg:absolute lg:right-0 lg:top-[50%] lg:translate-y-[-50%] lg:pb-0">
             <Swiper
               id="swiper-register"
-              className="absolute w-[800px]"
               slidesPerView={'auto'}
-              pagination={{
-                clickable: true,
-              }}
-              // modules={[Pagination]}
+              className="w-screen lg:w-[600px] xl:w-[900px]"
+              autoplay
+              centeredSlides
+              spaceBetween={20}
               onSwiper={(swiper) => setSwiper(swiper)}
               grabCursor
               breakpoints={{
                 0: {
+                  slidesPerView: 1,
+                },
+                680: {
                   slidesPerView: 2,
-                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 2.5,
                 },
                 1024: {
                   slidesPerView: 2,
-                  spaceBetween: 10,
                 },
               }}
             >

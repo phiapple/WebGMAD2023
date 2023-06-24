@@ -82,3 +82,7 @@ html {
 .min-h-screen-no-header-footer {
   min-height: calc(100vh - 82px - 82px);
 }
+
+#swiper-register .swiper-slide {
+  @apply !flex !items-center !justify-center lg:!block;
+}

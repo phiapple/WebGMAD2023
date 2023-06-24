@@ -11,26 +11,26 @@ export default function RegisterCard({
   return (
     <div
       className={clsx(
-        'bg-c-whitebg-cover m-0 flex aspect-[7/8] h-[40vh] flex-col-reverse rounded-2xl bg-center p-6  text-c-white drop-shadow-lg md:h-[60vh] lg:h-[50vh]',
+        'bg-c-whitebg-cover m-0 flex aspect-[7/8] w-[70vw] max-w-[300px] flex-col-reverse rounded-2xl bg-center p-6 text-c-white  drop-shadow-lg sm:w-[400px] lg:w-[500px]',
         bg
       )}
     >
       <div>
-        <div className="mb-2">{date}</div>
-        <h2 className="mb-4 text-2xl font-semibold">{title}</h2>
+        <div className="md:text-md mb-2 text-sm">{date}</div>
+        <h2 className="mb-4 text-xl font-semibold md:text-2xl">{title}</h2>
         <div className="flex gap-4">
           {registerUrl && (
             <Link
               href={registerUrl}
               target="_blank"
-              className="w-full rounded-full bg-c-orange p-2 text-center font-semibold text-c-white"
+              className="md:text-md grid w-full place-items-center rounded-full bg-c-orange p-1.5 text-center text-sm font-semibold text-c-white md:p-2"
             >
               Register Now
             </Link>
           )}
           <Link
             href={detailUrl}
-            className="w-full rounded-full border-2 border-c-white p-2 text-center font-semibold text-c-white"
+            className="md:text-md grid w-full place-items-center rounded-full border-2 border-c-white p-1.5 text-center text-sm font-semibold text-c-white md:p-2"
           >
             See Detail
           </Link>
