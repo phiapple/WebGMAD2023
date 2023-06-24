@@ -1,6 +1,6 @@
-import BaseLayout from '../../components/baseLayout';
-import Footer from '../../components/footer';
-import Navbar from '../../components/navbar';
+import BaseLayout from "../../components/baseLayout";
+import Footer from "../../components/footer";
+import Navbar from "../../components/navbar";
 
 export default function Grand() {
   return (
@@ -13,22 +13,34 @@ export default function Grand() {
         {/* content */}
         <div className="min-h-screen-no-header w-full bg-c-blue text-white">
           <div className="min-h-screen-no-header container mx-auto grid place-items-center bg-c-blue">
-            <div className="flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center bg-event-card-comvis bg-cover p-32 drop-shadow-lg">
-              <h3 className="text-center font-belleza text-3xl text-c-orange">
+            <div
+              className="flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center bg-event-card-comvis bg-cover p-32 drop-shadow-lg"
+              data-aos="fade-up"
+            >
+              <h3
+                className="text-center font-belleza text-3xl text-c-orange"
+                data-aos="fade-up"
+              >
                 GRAND
               </h3>
-              <h2 className="text-center font-belleza text-6xl">
+              <h2
+                className="text-center font-belleza text-6xl"
+                data-aos="fade-up"
+              >
                 GMAD Awarding and Networking Day
               </h2>
 
               <div className="mt-4">
-                <p className="text-center text-lg font-semibold">
+                <p
+                  className="text-center text-lg font-semibold"
+                  data-aos="fade-up"
+                >
                   Saturday, 23 September 2023
                 </p>
               </div>
               <div className="h-12"></div>
 
-              <p className="text-center text-lg">
+              <p className="text-center text-lg" data-aos="fade-up">
                 GRAND (GMAD Awarding and Networking Day) is a new breakthrough
                 in the series of events of GMAD 2023, which serves as the
                 culmination, awarding, and closing ceremony of the entire series

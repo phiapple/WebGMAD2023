@@ -3,7 +3,7 @@ import React from 'react'
 const TImelineCard = ({time, title, desc}) => {
   return (
     <>
-        <div className="flex-col max-w-[158px] md:max-w-[666px]">
+        <div className="flex-col max-w-[158px] md:max-w-[666px]" data-aos="fade-left">
             <div className={"flex justify-center rounded-full bg-c-white border border-c-orange md:px-4 px-2 md:py-2 py-0 text-center items-center"}>
                 <h3 className="md:text-2xl sm:text-xl text-lg text-c-orange">
                     {time}
