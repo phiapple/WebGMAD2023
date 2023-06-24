@@ -139,6 +139,59 @@ export default function Register() {
           </div>
         </div>
 
+        <section className="">
+          <div
+            data-aos="fade-up"
+            className=" container mx-auto py-[32px] md:py-[120px]"
+          >
+            <div className="flex w-full flex-col items-center rounded-3xl bg-c-blue px-[16px] py-[32px] md:flex-row lg:px-[100px] lg:py-[120px]">
+              <h2 className="font-belleza text-mobile-h2 text-c-white md:w-1/2 xl:text-h2">
+                Contact Us
+              </h2>
+              <div className="flex flex-col text-center text-white max-md:mt-12 md:w-full md:flex-row xl:gap-6 xl:text-2xl">
+                <div className="md:w-1/2">
+                  <p className="mb-3 md:mb-6">Sponsorship</p>
+                  <a
+                    href="https://wa.me/+6281511115195"
+                    className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="mr-2 inline 2xl:mr-4"
+                      src="/images/icons/WhatsApp.svg"
+                      alt="Icon WhatsApp"
+                    />
+                    081511115195
+                  </a>
+                  <p className="text-md mt-3 text-c-green md:mt-6">
+                    Inneke Patricia
+                  </p>
+                </div>
+                <div className="md:w-1/2">
+                  <p className="mb-3 md:mb-6">Media Partnership</p>
+                  <a
+                    href="https://wa.me/+6285800318595"
+                    className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="mr-2 inline 2xl:mr-4"
+                      src="/images/icons/WhatsApp.svg"
+                      alt="Icon WhatsApp"
+                    />
+                    085800318595
+                  </a>
+                  <p className="text-md mt-3 text-c-green md:mt-6">
+                    Listya Nur Aini
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* footer */}
         <Footer fixedBg></Footer>
       </div>
