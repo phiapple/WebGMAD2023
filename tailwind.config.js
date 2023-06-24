@@ -61,6 +61,7 @@ module.exports = {
         'event-card-nao': `url('/images/card/nao.png')`,
         'event-card-junior-nao': `url('/images/card/jnao.png')`,
         'event-card-jncc': `url('/images/card/jncc.png')`,
+        'event-card-training': `url('/images/card/training.png')`,
       },
     },
   },

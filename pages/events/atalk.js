@@ -1,21 +1,21 @@
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
-import TImelineCardRight from "../../components/card/TimelineCard/TImelineRightCard";
-import TimelineCardLeft from "../../components/card/TimelineCard/TimelineLeftCard";
-import BaseLayout from "../../components/baseLayout";
+import Footer from '../../components/footer';
+import Navbar from '../../components/navbar';
+import TImelineCardRight from '../../components/card/TimelineCard/TImelineRightCard';
+import TimelineCardLeft from '../../components/card/TimelineCard/TimelineLeftCard';
+import BaseLayout from '../../components/baseLayout';
 
 const leftTimeline = [
   {
-    time: "16, 18, and 20 September 2023",
-    title: "Pre-Event",
-    desc: "",
+    time: '16, 18, and 20 September 2023',
+    title: 'Pre-Event',
+    desc: '',
   },
 ];
 const rightTimeline = [
   {
-    time: "23 September 2023",
-    title: "Main Event",
-    desc: "",
+    time: '23 September 2023',
+    title: 'Main Event',
+    desc: '',
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Atalk() {
           <section className="relative h-screen w-full bg-gradient-to-b from-c-blue to-c-green ">
             <div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
               <div
-                className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
+                className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-comvis bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
                 data-aos="fade-up"
               >
                 <h3
