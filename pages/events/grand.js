@@ -5,7 +5,7 @@ import Navbar from '../../components/navbar';
 export default function Grand() {
   return (
     <BaseLayout seoTitle="GMAD • GMAD Awarding and Networking Day (GRAND)">
-      <div>
+      <div className="w-screen overflow-x-hidden">
         <Navbar fixedBg></Navbar>
         {/* for navbar placeholder */}
         <div className="h-[82px]"></div>

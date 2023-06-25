@@ -5,7 +5,7 @@ import Navbar from '../../components/navbar';
 export default function CompanyVisit() {
   return (
     <BaseLayout seoTitle="GMAD • Company Visit">
-      <div>
+      <div className="w-screen overflow-x-hidden">
         <Navbar fixedBg></Navbar>
         {/* for navbar placeholder */}
         <div className="h-[82px]"></div>

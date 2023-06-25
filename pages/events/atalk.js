@@ -23,7 +23,7 @@ export default function Atalk() {
   return (
     <BaseLayout seoTitle="GMAD • Accounting Talk (A-Talk)">
       <>
-        <div className="h-full w-full">
+        <div className="h-full w-screen overflow-x-hidden">
           <Navbar fixedBg></Navbar>
           <div className="h-[82px]"></div>
           <section className="relative h-screen w-full bg-gradient-to-b from-c-blue to-c-green ">

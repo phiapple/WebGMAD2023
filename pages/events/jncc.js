@@ -1,41 +1,40 @@
-import React from "react";
-import TImelineCardRight from "../../components/card/TimelineCard/TImelineRightCard";
-import TimelineCardLeft from "../../components/card/TimelineCard/TimelineLeftCard";
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
-import BaseLayout from "../../components/baseLayout";
+import React from 'react';
+import TImelineCardRight from '../../components/card/TimelineCard/TImelineRightCard';
+import TimelineCardLeft from '../../components/card/TimelineCard/TimelineLeftCard';
+import Footer from '../../components/footer';
+import Navbar from '../../components/navbar';
+import BaseLayout from '../../components/baseLayout';
 
 const leftTimeline = [
   {
-    time: "25 June - 21 July 2023",
-    title: "Open Submission Preliminary 1",
-    desc: "",
+    time: '25 June - 21 July 2023',
+    title: 'Open Submission Preliminary 1',
+    desc: '',
   },
   {
-    time: "9 September 2023",
-    title: "Semifinal Stage",
-    desc: "",
+    time: '9 September 2023',
+    title: 'Semifinal Stage',
+    desc: '',
   },
 ];
 const rightTimeline = [
   {
-    time: "6 - 20 August 2023",
-    title: "Open Submission Preliminary 2",
-    desc: "",
+    time: '6 - 20 August 2023',
+    title: 'Open Submission Preliminary 2',
+    desc: '',
   },
   {
-    time: "22 September 2023",
-    title: "Grand Final Stage",
-    desc: "",
+    time: '22 September 2023',
+    title: 'Grand Final Stage',
+    desc: '',
   },
 ];
 
 export default function Jncc() {
   return (
     <BaseLayout seoTitle="GMAD • Jogjakarta National Case Competition (JNCC)">
-      {" "}
       <>
-        <div className="h-full w-full">
+        <div className="h-full w-screen overflow-x-hidden">
           <Navbar fixedBg></Navbar>
           <div className="h-[82px]"></div>
           <section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">

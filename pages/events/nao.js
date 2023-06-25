@@ -1,42 +1,42 @@
-import React from "react";
-import TImelineCardRight from "../../components/card/TimelineCard/TImelineRightCard";
-import TimelineCardLeft from "../../components/card/TimelineCard/TimelineLeftCard";
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
-import BaseLayout from "../../components/baseLayout";
+import React from 'react';
+import TImelineCardRight from '../../components/card/TimelineCard/TImelineRightCard';
+import TimelineCardLeft from '../../components/card/TimelineCard/TimelineLeftCard';
+import Footer from '../../components/footer';
+import Navbar from '../../components/navbar';
+import BaseLayout from '../../components/baseLayout';
 
 const leftTimeline = [
   {
-    time: "25 - 30 June 2023",
-    title: "Early Bird Registration",
-    desc: "",
+    time: '25 - 30 June 2023',
+    title: 'Early Bird Registration',
+    desc: '',
   },
   {
-    time: "19 August 2023",
-    title: "Preliminary Stage",
-    desc: "",
+    time: '19 August 2023',
+    title: 'Preliminary Stage',
+    desc: '',
   },
   {
-    time: "9 September 2023",
-    title: "Semifinal Stage",
-    desc: "",
+    time: '9 September 2023',
+    title: 'Semifinal Stage',
+    desc: '',
   },
 ];
 const rightTimeline = [
   {
-    time: "1 July - 17 August 2023",
-    title: "Regular Registration",
-    desc: "",
+    time: '1 July - 17 August 2023',
+    title: 'Regular Registration',
+    desc: '',
   },
   {
-    time: "26 August 2023",
-    title: "Quarter Final Stage",
-    desc: "",
+    time: '26 August 2023',
+    title: 'Quarter Final Stage',
+    desc: '',
   },
   {
-    time: "22 September 2023",
-    title: "Grand Final Stage ",
-    desc: "",
+    time: '22 September 2023',
+    title: 'Grand Final Stage ',
+    desc: '',
   },
 ];
 
@@ -44,7 +44,7 @@ const Nao = () => {
   return (
     <BaseLayout seoTitle="GMAD • National Accounting Olympiad (NAO)">
       <>
-        <div className="h-full w-full">
+        <div className="h-full w-screen overflow-x-hidden">
           <Navbar fixedBg></Navbar>
           <div className="h-[82px]"></div>
           <section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">
