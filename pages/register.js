@@ -19,28 +19,28 @@ import BaseLayout from '../components/baseLayout';
 const EVENTS = [
   {
     title: 'National Accounting Olympiad',
-    date: 'Until 17 August 2023',
+    // date: 'Until 17 August 2023',
     registerUrl: 'https://bit.ly/RegistrationNAO2023',
     detailUrl: '/events/nao',
     bg: `bg-[url('/images/card/nao-grad.png')]`,
   },
   {
     title: 'Junior National Accounting Olympiad',
-    date: '22-23 September 2023',
+    // date: '22-23 September 2023',
     registerUrl: 'https://bit.ly/RegistrationNAOJunior2023',
     detailUrl: '/events/junior-nao',
     bg: `bg-[url('/images/card/jnao-grad.png')]`,
   },
   {
     title: 'Jogjakarta National Case Competition',
-    date: '22-23 September 2023',
+    // date: '22-23 September 2023',
     registerUrl: 'https://bit.ly/RegistrationJNCC2023',
     detailUrl: '/events/jncc',
     bg: `bg-[url('/images/card/jncc-grad.png')]`,
   },
   {
     title: 'Atalk',
-    date: '22 September 2023',
+    // date: '22 September 2023',
     registerUrl: 'https://bit.ly/RegistrationA-Talk2023',
     detailUrl: '/events/atalk',
     bg: `bg-[url('/images/card/atalk-grad.png')]`,
@@ -48,19 +48,19 @@ const EVENTS = [
 
   {
     title: 'GMAD Awarding and Networking Day',
-    date: '22-23 September 2023',
+    // date: '22-23 September 2023',
     detailUrl: '/events/grand',
     bg: `bg-[url('/images/card/grand-grad.png')]`,
   },
   {
     title: 'Company Visit',
-    date: '22-23 September 2023',
+    // date: '22-23 September 2023',
     detailUrl: '/events/comvis',
     bg: `bg-[url('/images/card/comvis-grad.png')]`,
   },
   {
     title: 'Training',
-    date: '22-23 September 2023',
+    // date: '22-23 September 2023',
     detailUrl: '/events/training',
     bg: `bg-[url('/images/card/training-grad.png')]`,
   },
