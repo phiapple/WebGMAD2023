@@ -1,42 +1,42 @@
-import React from 'react';
-import TImelineCardRight from '../../components/card/TimelineCard/TImelineRightCard';
-import TimelineCardLeft from '../../components/card/TimelineCard/TimelineLeftCard';
-import Footer from '../../components/footer';
-import Navbar from '../../components/navbar';
-import BaseLayout from '../../components/baseLayout';
+import React from "react";
+import TImelineCardRight from "../../components/card/TimelineCard/TImelineRightCard";
+import TimelineCardLeft from "../../components/card/TimelineCard/TimelineLeftCard";
+import Footer from "../../components/footer";
+import Navbar from "../../components/navbar";
+import BaseLayout from "../../components/baseLayout";
 
 const leftTimeline = [
   {
-    time: '25 - 30 June 2023',
-    title: 'Early Bird Registration',
-    desc: '',
+    time: "25 - 30 June 2023",
+    title: "Early Bird Registration",
+    desc: "",
   },
   {
-    time: '19 August 2023',
-    title: 'Preliminary Stage',
-    desc: '',
+    time: "19 August 2023",
+    title: "Preliminary Stage",
+    desc: "",
   },
   {
-    time: '9 September 2023',
-    title: 'Semifinal Stage',
-    desc: '',
+    time: "9 September 2023",
+    title: "Semifinal Stage",
+    desc: "",
   },
 ];
 const rightTimeline = [
   {
-    time: '1 July - 17 August 2023',
-    title: 'Regular Registration',
-    desc: '',
+    time: "1 July - 17 August 2023",
+    title: "Regular Registration",
+    desc: "",
   },
   {
-    time: '26 August 2023',
-    title: 'Quarter Final Stage',
-    desc: '',
+    time: "26 August 2023",
+    title: "Quarter Final Stage",
+    desc: "",
   },
   {
-    time: '22 September 2023',
-    title: 'Grand Final Stage ',
-    desc: '',
+    time: "22 September 2023",
+    title: "Grand Final Stage ",
+    desc: "",
   },
 ];
 
@@ -175,13 +175,21 @@ const Nao = () => {
             >
               So, What Are You Waiting For ?
             </h2>
-            <div className="mt-[32px] md:mt-[60px]">
+            <div className="mt-[32px] flex flex-col gap-8 md:mt-[60px] md:flex-row">
               <a
-                className="rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
+                className="flex items-center justify-center rounded-3xl bg-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
                 href="https://bit.ly/RegistrationNAO2023"
                 data-aos="fade-up"
               >
                 Register Now
+              </a>
+              <a
+                className="flex items-center justify-center rounded-3xl border border-c-orange px-6 py-2 font-semibold text-c-white transition hover:bg-c-white hover:text-c-orange md:px-12 md:py-4"
+                href="http://bit.ly/BookletNAO23"
+                target="_blank"
+                data-aos="fade-up"
+              >
+                Download Booklet
               </a>
             </div>
           </section>
