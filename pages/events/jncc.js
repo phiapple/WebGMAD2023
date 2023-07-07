@@ -7,7 +7,7 @@ import BaseLayout from "../../components/baseLayout";
 
 const leftTimeline = [
   {
-    time: "25 June - 21 July 2023",
+    time: "25 June - 23 July 2023",
     title: "Open Submission Preliminary 1",
     desc: "",
   },
