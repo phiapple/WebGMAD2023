@@ -238,7 +238,7 @@ export default function Home() {
                   key={index}
                 >
                   <div class="flex flex-col gap-2 md:gap-4">
-                    <div className="flex h-56 w-full overflow-hidden rounded-2xl bg-c-blue">
+                    <div className="flex h-56 w-full overflow-hidden rounded-2xl">
                       <Image
                         src={event.imgUrl}
                         alt={event.imgAlt}

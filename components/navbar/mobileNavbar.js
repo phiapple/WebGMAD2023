@@ -60,7 +60,7 @@ export default function MobileNavbar({
           <img
             src="/images/logo-horizontal.png"
             alt="Logo GMAD"
-            className="h-[50px] w-fit"
+            className="h-[50px] object-contain"
           />
           <div className="flex flex-col gap-6">
             {ROUTES.map((route, i) =>
