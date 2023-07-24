@@ -50,7 +50,7 @@ const Nao = () => {
           <section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">
             <div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
               <div
-                className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
+                className="nd:py-[60px] flex aspect-[16/9] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
                 data-aos="fade-up"
               >
                 <h3
