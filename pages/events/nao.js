@@ -104,7 +104,7 @@ const Nao = () => {
                 </h2>
               </div>
             </div>
-            <div className="mx-auto my-10 max-w-[1088px] px-4">
+            <div className="mx-auto my-10 max-w-[1088px] px-10">
               <p
                 className="text-center text-lg text-white md:text-xl"
                 data-aos="fade-up"
