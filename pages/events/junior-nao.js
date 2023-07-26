@@ -127,7 +127,7 @@ export default function JuniorNao() {
                   Timeline
                 </h2>
               </div>
-              <div className="flex w-screen justify-center">
+              <div className="flex w-screen justify-center px-6">
                 <div className="mt-[24px] flex-col">
                   {/* left component */}
                   {leftTimeline.map((data, index) => (
