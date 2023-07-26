@@ -48,9 +48,9 @@ const Nao = () => {
 					<Navbar fixedBg></Navbar>
 					<div className="h-[82px]"></div>
 					<section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">
-						<div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
+						<div className="min-h-screen-no-header container mx-auto grid place-items-center px-10 md:w-[1272px] md:px-0 lg:h-[671px]">
 							<div
-								className="nd:py-[60px] flex aspect-[16/9] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
+								className="nd:py-[60px] flex max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px] lg:aspect-[16/9]"
 								data-aos="fade-up"
 							>
 								<h3
@@ -79,7 +79,7 @@ const Nao = () => {
 						</div>
 						<div className=" mx-auto flex justify-center px-[40px]">
 							<div
-								className="flex aspect-[16/9] h-full max-h-[305px] max-w-[1208px] flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:w-[800px] xl:w-[1208px]"
+								className="flex h-full flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:aspect-[16/9] md:w-[800px] md:max-w-[1208px] lg:max-h-[305px] xl:w-[1208px]"
 								data-aos="fade-up"
 							>
 								<h3 className="text-2xl text-c-blue md:text-3xl" data-aos="fade-up">

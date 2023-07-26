@@ -46,10 +46,10 @@ export default function JuniorNao() {
 				<div className="h-full w-screen overflow-x-hidden">
 					<Navbar fixedBg></Navbar>
 					<div className="h-[82px]"></div>
-					<section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">
-						<div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
+					<section className="relative w-full bg-gradient-to-b from-c-blue to-c-green md:h-[1594px] ">
+						<div className="min-h-screen-no-header container mx-auto grid place-items-center px-10 md:h-[671px] md:w-[1272px] md:px-0">
 							<div
-								className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-junior-nao bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
+								className="nd:py-[60px] flex max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-junior-nao bg-cover p-[40px] drop-shadow-lg md:aspect-[16/9] md:max-h-[56vh] md:px-[120px]"
 								data-aos="fade-up"
 							>
 								<h3
@@ -78,9 +78,9 @@ export default function JuniorNao() {
 								</p>
 							</div>
 						</div>
-						<div className=" mx-auto flex justify-center px-[40px]">
+						<div className=" mx-auto flex justify-center px-[40px] pt-10 md:pt-0">
 							<div
-								className="flex aspect-[16/9] h-full max-h-[305px] max-w-[1208px] flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:w-[800px] xl:w-[1208px]"
+								className="flex h-full max-w-[1208px] flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:aspect-[16/9] md:max-h-[305px] md:w-[800px] xl:w-[1208px]"
 								data-aos="fade-up"
 							>
 								<h3 className="text-2xl text-c-blue md:text-3xl" data-aos="fade-up">
@@ -92,8 +92,8 @@ export default function JuniorNao() {
 								</h2>
 							</div>
 						</div>
-						<div className="mx-auto my-10 max-w-[1088px] px-4">
-							<p className="text-center text-lg text-white md:text-xl" data-aos="fade-up">
+						<div className="mx-auto my-10 max-w-[1088px] px-4 pb-10 md:pb-0">
+							<p className="h-full text-center text-lg text-white md:text-xl" data-aos="fade-up">
 								This refers to the role of accountants in facing the challenges and opportunities of
 								ESG (Environmental, Social, and Governance) in the digital era of sustainability.
 								Its aim is to educate and enhance participants' understanding of the accountant's

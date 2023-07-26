@@ -26,10 +26,10 @@ export default function Atalk() {
 				<div className="h-full w-screen overflow-x-hidden">
 					<Navbar fixedBg></Navbar>
 					<div className="h-[82px]"></div>
-					<section className="relative h-screen w-full bg-gradient-to-b from-c-blue to-c-green ">
-						<div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
+					<section className="relative w-full bg-gradient-to-b from-c-blue to-c-green md:h-screen ">
+						<div className="min-h-screen-no-header container mx-auto grid w-[296px] place-items-center px-0 md:h-[671px] md:w-[1272px]">
 							<div
-								className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-comvis bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
+								className="nd:py-[60px] flex max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-comvis bg-cover p-[40px] drop-shadow-lg md:aspect-[16/9] md:max-h-[56vh] md:px-[120px]"
 								data-aos="fade-up"
 							>
 								<h3

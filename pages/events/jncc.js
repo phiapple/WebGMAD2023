@@ -37,10 +37,10 @@ export default function Jncc() {
 				<div className="h-full w-screen overflow-x-hidden">
 					<Navbar fixedBg></Navbar>
 					<div className="h-[82px]"></div>
-					<section className="relative h-[1594px] w-full bg-gradient-to-b from-c-blue to-c-green ">
-						<div className="min-h-screen-no-header container mx-auto grid h-[671px] w-[296px] place-items-center px-0 md:w-[1272px]">
+					<section className="relative w-full bg-gradient-to-b from-c-blue to-c-green py-10 md:h-[1594px] md:py-0 ">
+						<div className="min-h-screen-no-header container mx-auto grid w-[296px] place-items-center px-0 md:h-[671px] md:w-[1272px]">
 							<div
-								className="nd:py-[60px] flex aspect-[16/9] max-h-[56vh] max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-jncc bg-cover p-[40px] drop-shadow-lg md:px-[120px]"
+								className="nd:py-[60px] flex max-w-full flex-col items-center justify-center rounded-[24px] border border-c-orange bg-event-card-jncc bg-cover p-[40px] drop-shadow-lg md:aspect-[16/9] md:max-h-[56vh] md:px-[120px]"
 								data-aos="fade-up"
 							>
 								<h3
@@ -68,8 +68,8 @@ export default function Jncc() {
 								</p>
 							</div>
 						</div>
-						<div className=" mx-auto flex justify-center px-[40px]">
-							<div className="flex aspect-[16/9] h-full max-h-[305px] max-w-[1208px] flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:w-[800px] xl:w-[1208px]">
+						<div className=" mx-auto flex justify-center px-[40px] py-10 md:py-0">
+							<div className="flex h-full max-w-[1208px] flex-col items-center justify-center rounded-[24px] border-[2px] border-c-blue p-[40px] drop-shadow-lg md:aspect-[16/9] md:max-h-[305px] md:w-[800px] xl:w-[1208px]">
 								<h3 className="text-2xl text-c-blue md:text-3xl" data-aos="fade-up">
 									Sub-Theme
 								</h3>
