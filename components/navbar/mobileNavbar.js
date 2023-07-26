@@ -34,16 +34,16 @@ export default function MobileNavbar({ fixedBg = false, scrollPosition = 0, ROUT
 			{/* overlay full screen */}
 			<div
 				className={clsx(
-					'fixed z-[1000] h-screen w-screen bg-c-blue text-white transition-all duration-200',
+					'fixed z-[1000] h-screen w-screen overflow-y-auto bg-c-blue pb-20 text-white transition-all duration-200',
 					isOpen ? 'left-0 opacity-100' : 'opcaity-0 left-[-120%]'
 				)}
 			>
-				<div className="container flex flex-row-reverse">
+				{isOpen ? (
 					<FiX
-						className="absolute top-6 h-8 w-8 cursor-pointer"
+						className="fixed right-0 top-0 mx-4 my-6 h-8 w-8 cursor-pointer"
 						onClick={() => setIsOpen(false)}
 					></FiX>
-				</div>
+				) : null}
 				<div className="h-header"></div>
 				<div className="container mx-auto my-12 flex max-w-[330px] flex-col gap-8 font-semibold">
 					<div className="flex justify-start">
