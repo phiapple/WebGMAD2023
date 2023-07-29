@@ -181,7 +181,7 @@ export default function Jncc() {
 										</p>
 										<a
 											href="https://wa.me/+6281511115195"
-											className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+											className="rounded-full bg-c-green px-4 py-2 md:py-4"
 											data-aos="fade-up"
 										>
 											<img
@@ -198,7 +198,7 @@ export default function Jncc() {
 										</p>
 										<a
 											href="https://wa.me/+6285800318595"
-											className="rounded-full bg-c-green px-4 py-2 md:py-4 2xl:px-16"
+											className="rounded-full bg-c-green px-4 py-2 md:py-4"
 											data-aos="fade-up"
 										>
 											<img
