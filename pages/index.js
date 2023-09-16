@@ -1,63 +1,63 @@
-import Image from 'next/image';
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
-import BaseLayout from '../components/baseLayout';
-import clsx from 'clsx';
+import Image from "next/image";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import BaseLayout from "../components/baseLayout";
+import clsx from "clsx";
 
 const events = [
   {
-    title: 'NAO',
-    subtitle: 'National Accounting Olympiad',
-    buttonTo: '/events/nao',
-    regLink: 'https://bit.ly/RegistrationNAO2023',
-    imgUrl: '/images/events/nao.png',
-    imgAlt: 'NAO Image',
+    title: "NAO",
+    subtitle: "National Accounting Olympiad",
+    buttonTo: "/events/nao",
+    regLink: "https://bit.ly/RegistrationNAO2023",
+    imgUrl: "/images/events/nao.png",
+    imgAlt: "NAO Image",
   },
   {
-    title: 'Junior NAO',
-    subtitle: 'Junior National Accounting Olympiad',
-    buttonTo: '/events/junior-nao',
-    regLink: 'https://bit.ly/RegistrationNAOJunior2023',
-    imgUrl: '/images/events/jnao.png',
-    imgAlt: 'Junior NAO Image ',
+    title: "Junior NAO",
+    subtitle: "Junior National Accounting Olympiad",
+    buttonTo: "/events/junior-nao",
+    regLink: "https://bit.ly/RegistrationNAOJunior2023",
+    imgUrl: "/images/events/jnao.png",
+    imgAlt: "Junior NAO Image ",
   },
   {
-    title: 'JNCC',
-    subtitle: 'Jogjakarta National Case Competition',
-    buttonTo: '/events/jncc',
-    regLink: 'https://bit.ly/RegistrationJNCC2023',
-    imgUrl: '/images/events/jncc.png',
-    imgAlt: 'JNCC Image ',
+    title: "JNCC",
+    subtitle: "Jogjakarta National Case Competition",
+    buttonTo: "/events/jncc",
+    regLink: "https://bit.ly/RegistrationJNCC2023",
+    imgUrl: "/images/events/jncc.png",
+    imgAlt: "JNCC Image ",
   },
 
   {
-    title: 'Training',
-    subtitle: 'Training',
-    buttonTo: '/events/training',
-    imgUrl: '/images/events/training.png',
-    imgAlt: 'Training Image ',
+    title: "Training",
+    subtitle: "Training",
+    buttonTo: "/events/training",
+    imgUrl: "/images/events/training.png",
+    imgAlt: "Training Image ",
   },
   {
-    title: 'Comvis',
-    subtitle: 'Company Visit',
-    buttonTo: '/events/company-visit',
-    imgUrl: '/images/events/comvis.png',
-    imgAlt: 'Company Visit Image ',
+    title: "Comvis",
+    subtitle: "Company Visit",
+    buttonTo: "/events/company-visit",
+    imgUrl: "/images/events/comvis.png",
+    imgAlt: "Company Visit Image ",
   },
   {
-    title: 'A-Talks',
-    subtitle: 'Accounting Talk',
-    buttonTo: '/events/atalk',
-    regLink: 'https://bit.ly/RegistrationA-Talk2023',
-    imgUrl: '/images/events/atalk.png',
-    imgAlt: 'A-Talks Image',
+    title: "A-Talks",
+    subtitle: "Accounting Talk",
+    buttonTo: "/events/atalk",
+    regLink: "https://bit.ly/RegistrationA-Talk2023",
+    imgUrl: "/images/events/atalk.png",
+    imgAlt: "A-Talks Image",
   },
   {
-    title: 'GRAND',
-    subtitle: 'GMAD Awarding and Networking Day',
-    buttonTo: '/events/grand',
-    imgUrl: '/images/events/grand.png',
-    imgAlt: 'GRAND Image',
+    title: "GRAND",
+    subtitle: "GMAD Awarding and Networking Day",
+    buttonTo: "/events/grand",
+    imgUrl: "/images/events/grand.png",
+    imgAlt: "GRAND Image",
   },
 ];
 
@@ -77,106 +77,168 @@ const events = [
 
 const sponsor = [
   {
-    span: 'col-span-2 md:col-span-3',
+    name: "Paragon",
+    imgUrl: "/images/partners/sponsors/paragon.png",
+    imgAlt: "Paragon",
+    span: "col-span-2 md:col-span-6",
+    size: "w-60 h-auto md:w-auto md:h-60",
   },
   {
-    name: 'Sate Ratu',
-    imgUrl: '/images/partners/sponsors/sate-ratu.png',
-    imgAlt: 'Sate Ratu',
-    span: 'col-span-4 md:col-span-3',
+    name: "Ambarrukmo",
+    imgUrl: "/images/partners/sponsors/ambarrukmo.png",
+    imgAlt: "Ambarrukmo",
+    span: "col-span-2 md:col-span-6",
+    size: "w-60 h-auto md:w-auto md:h-60",
   },
   {
-    name: 'Yamie Panda',
-    imgUrl: '/images/partners/sponsors/yamie-panda.png',
-    imgAlt: 'Yamie Panda',
-    span: 'col-span-4 md:col-span-3',
+    name: "Sate Ratu",
+    imgUrl: "/images/partners/sponsors/sate-ratu.png",
+    imgAlt: "Sate Ratu",
+    span: "col-span-1 md:col-span-4",
+    size: "md:h-16",
   },
   {
-    span: 'col-span-2 md:col-span-3',
+    name: "Yamie Panda",
+    imgUrl: "/images/partners/sponsors/yamie-panda.png",
+    imgAlt: "Yamie Panda",
+    span: "col-span-1 md:col-span-4",
+    size: "h-16",
+  },
+  {
+    name: "Skin Guru",
+    imgUrl: "/images/partners/sponsors/skin-guru.png",
+    imgAlt: "Skin Guru",
+    span: "col-span-1 md:col-span-4",
+    size: "h-16",
+  },
+  {
+    name: "Telkom Landmark Tower",
+    imgUrl: "/images/partners/sponsors/TLT.png",
+    imgAlt: "TLT",
+    span: "col-span-1 md:col-span-4",
+    size: "h-16",
+  },
+  {
+    name: "Gatraloka",
+    imgUrl: "/images/partners/sponsors/gatraloka.png",
+    imgAlt: "Gatraloka",
+    span: "col-span-1 md:col-span-4",
+    size: "h-16",
+  },
+  {
+    name: "Panasonic",
+    imgUrl: "/images/partners/sponsors/panasonic.png",
+    imgAlt: "Panasonic",
+    span: "col-span-1 md:col-span-4",
+    size: "h-16",
+  },
+];
+
+const supports = [
+  {
+    name: "IAI DIY",
+    imgUrl: "/images/partners/supports/IAI.png",
+    imgAlt: "IAI DIY",
+    span: "col-span-2 md:col-span-4",
+    size: "w-60 h-auto md:w-auto md:h-60",
+  },
+  {
+    name: "KPMG Indonesia",
+    imgUrl: "/images/partners/supports/KPMG.png",
+    imgAlt: "KPMG Indonesia",
+    span: "col-span-2 md:col-span-4",
+    size: "w-60 h-auto md:w-auto md:h-60",
+  },
+  {
+    name: "SIDEK-Edu",
+    imgUrl: "/images/partners/supports/SIDEK.png",
+    imgAlt: "SIDEK-Edu",
+    span: "col-span-2 md:col-span-4",
+    size: "w-60 h-auto md:w-auto md:h-60",
   },
 ];
 
 const pastSponsor = [
   {
-    name: 'CIMB Digital Lounge',
-    imgUrl: '/images/partners/cimb2.png',
-    imgAlt: 'CIMB logo',
-    span: 'md:col-span-6',
+    name: "CIMB Digital Lounge",
+    imgUrl: "/images/partners/cimb2.png",
+    imgAlt: "CIMB logo",
+    span: "md:col-span-6",
   },
   {
-    name: 'Taspen Properti',
-    imgUrl: '/images/partners/taspen2.png',
-    imgAlt: 'Taspen logo',
-    span: 'md:col-span-6',
+    name: "Taspen Properti",
+    imgUrl: "/images/partners/taspen2.png",
+    imgAlt: "Taspen logo",
+    span: "md:col-span-6",
   },
 ];
 
 const pastMedpart = [
   {
-    name: 'Istakalisa',
-    imgUrl: '/images/partners/medpart/istakalisa2.png',
-    imgAlt: 'Istakalisa logo',
-    span: 'md:col-span-3',
+    name: "Istakalisa",
+    imgUrl: "/images/partners/medpart/istakalisa2.png",
+    imgAlt: "Istakalisa logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'ADI TV',
-    imgUrl: '/images/partners/medpart/aditv.png',
-    imgAlt: 'Adi TV logo',
-    span: 'col-span-2 md:col-span-6',
+    name: "ADI TV",
+    imgUrl: "/images/partners/medpart/aditv.png",
+    imgAlt: "Adi TV logo",
+    span: "col-span-2 md:col-span-6",
   },
   {
-    name: 'Petra FM',
-    imgUrl: '/images/partners/medpart/petra2.png',
-    imgAlt: 'Petra FM logo',
-    span: 'md:col-span-3',
+    name: "Petra FM",
+    imgUrl: "/images/partners/medpart/petra2.png",
+    imgAlt: "Petra FM logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'Magenta',
-    imgUrl: '/images/partners/medpart/magenta.png',
-    imgAlt: 'Magenta logo',
-    span: 'md:col-span-3',
+    name: "Magenta",
+    imgUrl: "/images/partners/medpart/magenta.png",
+    imgAlt: "Magenta logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'RBTV',
-    imgUrl: '/images/partners/medpart/rbtv.png',
-    imgAlt: 'RBTV logo',
-    span: 'md:col-span-3',
+    name: "RBTV",
+    imgUrl: "/images/partners/medpart/rbtv.png",
+    imgAlt: "RBTV logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'Geronimo',
-    imgUrl: '/images/partners/medpart/geronimo2.png',
-    imgAlt: 'Geronimo logo',
-    span: 'md:col-span-3',
+    name: "Geronimo",
+    imgUrl: "/images/partners/medpart/geronimo2.png",
+    imgAlt: "Geronimo logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'StarFM',
-    imgUrl: '/images/partners/medpart/starfm2.png',
-    imgAlt: 'StarFM logo',
-    span: 'md:col-span-3',
+    name: "StarFM",
+    imgUrl: "/images/partners/medpart/starfm2.png",
+    imgAlt: "StarFM logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'HIMA Akuntansi UNAIR',
-    imgUrl: '/images/partners/medpart/hima-unair2.png',
-    imgAlt: 'Hima Akuntansi UNAIR logo',
-    span: 'md:col-span-4',
+    name: "HIMA Akuntansi UNAIR",
+    imgUrl: "/images/partners/medpart/hima-unair2.png",
+    imgAlt: "Hima Akuntansi UNAIR logo",
+    span: "md:col-span-4",
   },
   {
-    name: 'HIMAJA UNESA',
-    imgUrl: '/images/partners/medpart/himajaunesa2.png',
-    imgAlt: 'HIMAJA UNESA logo',
-    span: 'md:col-span-2',
+    name: "HIMAJA UNESA",
+    imgUrl: "/images/partners/medpart/himajaunesa2.png",
+    imgAlt: "HIMAJA UNESA logo",
+    span: "md:col-span-2",
   },
   {
-    name: 'Ruang Mahasiswa',
-    imgUrl: '/images/partners/medpart/ruangmhs2.png',
-    imgAlt: 'Ruang Mahasiswa logo',
-    span: 'md:col-span-3',
+    name: "Ruang Mahasiswa",
+    imgUrl: "/images/partners/medpart/ruangmhs2.png",
+    imgAlt: "Ruang Mahasiswa logo",
+    span: "md:col-span-3",
   },
   {
-    name: 'Eventtik',
-    imgUrl: '/images/partners/medpart/eventtik2.png',
-    imgAlt: 'Eventtik logo',
-    span: 'md:col-span-3',
+    name: "Eventtik",
+    imgUrl: "/images/partners/medpart/eventtik2.png",
+    imgAlt: "Eventtik logo",
+    span: "md:col-span-3",
   },
 ];
 
@@ -371,18 +433,50 @@ export default function Home() {
               Sponsored By
             </h2>
             <div className="flex flex-col text-center">
-              <div className="grid h-fit w-full grid-cols-12 place-items-center gap-8">
+              <div className="grid h-fit w-full grid-cols-2 place-items-center gap-12 md:grid-cols-12">
                 {sponsor.map((item, index) => (
                   <div
                     data-aos="fade-up"
-                    className={clsx(`relative w-full`, item.span)}
+                    className={clsx(`relative`, item.span)}
                     key={index}
                   >
                     {item?.imgUrl && (
                       <img
                         src={item.imgUrl}
                         alt={item.imgAlt}
-                        style={{ objectFit: 'contain' }}
+                        style={{ objectFit: "contain" }}
+                        className={item.size}
+                      ></img>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="">
+          <div className="container mx-auto flex flex-col items-center justify-center gap-8 py-16 md:gap-30 md:py-[120px]">
+            <h2
+              data-aos="fade-up"
+              className="font-belleza text-mobile-h2 text-c-orange max-md:mb-8 xl:text-h2"
+            >
+              Supported By
+            </h2>
+            <div className="flex flex-col text-center">
+              <div className="grid h-fit w-full grid-cols-2 place-items-center gap-8 md:grid-cols-12">
+                {supports.map((item, index) => (
+                  <div
+                    data-aos="fade-up"
+                    className={clsx(`relative`, item.span)}
+                    key={index}
+                  >
+                    {item?.imgUrl && (
+                      <img
+                        src={item.imgUrl}
+                        alt={item.imgAlt}
+                        style={{ objectFit: "contain" }}
+                        className={item.size}
                       ></img>
                     )}
                   </div>
@@ -418,7 +512,7 @@ export default function Home() {
                       src={item.imgUrl}
                       alt={item.imgAlt}
                       fill
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: "contain" }}
                     ></Image>
                   </div>
                 ))}
@@ -442,7 +536,7 @@ export default function Home() {
                       src={item.imgUrl}
                       alt={item.imgAlt}
                       fill
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: "contain" }}
                     ></Image>
                   </div>
                 ))}
